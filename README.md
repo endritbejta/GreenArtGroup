@@ -1,18 +1,27 @@
-# React + Vite
+# GreenArt Group 🌿
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive website for a gardening & landscaping company that handles every kind of garden work — from lawn care and garden design to full landscape builds, interior plants and year-round maintenance.
 
-Currently, two official plugins are available:
+**Live demo:** [greenartgroup.netlify.app](https://greenartgroup.netlify.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Overview
 
-## React Compiler
+The site is a multi-page React application with a premium, green-themed design. It includes a home page with hero, stats and featured content, an about page with the company story and team, a services catalog with detail pages for each service, a filterable project portfolio, a contact page with a validated form, and a custom 404 page.
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+## Tech Stack
 
-Note: This will impact Vite dev & build performances.
+- React 19
+- React Router
+- Tailwind CSS
+- Vite
 
-## Expanding the ESLint configuration
+Built with a component-driven architecture: content lives in data files, pages are composed from reusable components, and routes are lazy-loaded.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Getting Started
+
+```bash
+npm install
+npm run dev
+```
+
+Build for production with `npm run build`.
