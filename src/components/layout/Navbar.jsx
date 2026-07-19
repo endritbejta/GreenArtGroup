@@ -1,11 +1,13 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { NAV_LINKS } from "../../constants/site";
+import { useLanguage } from "../../i18n/LanguageContext";
 import { useScrolledPast } from "../../hooks/useScrollPosition";
 import { cn } from "../../utils/cn";
 import Button from "../ui/Button";
 import Container from "../ui/Container";
 import Icon from "../ui/Icon";
+import LanguageSwitcher from "./LanguageSwitcher";
 import Logo from "./Logo";
 import MobileMenu from "./MobileMenu";
 import TopBar from "./TopBar";
@@ -13,6 +15,7 @@ import TopBar from "./TopBar";
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const scrolled = useScrolledPast(10);
+  const { t } = useLanguage();
 
   return (
     <header className="sticky top-0 z-40">
@@ -42,7 +45,7 @@ export default function Navbar() {
                       )
                     }
                   >
-                    {link.label}
+                    {t(`nav.${link.key}`)}
                   </NavLink>
                 </li>
               ))}
@@ -50,13 +53,14 @@ export default function Navbar() {
           </nav>
 
           <div className="flex items-center gap-3">
+            <LanguageSwitcher className="hidden sm:flex" />
             <Button to="/contact" icon="arrow-up-right" className="hidden sm:inline-flex">
-              Get In Touch
+              {t("common.getInTouch")}
             </Button>
             <button
               type="button"
               onClick={() => setMenuOpen(true)}
-              aria-label="Open menu"
+              aria-label={t("common.openMenu")}
               aria-expanded={menuOpen}
               className="flex h-10 w-10 items-center justify-center rounded-full text-gray-700 transition-colors hover:bg-gray-100 lg:hidden"
             >

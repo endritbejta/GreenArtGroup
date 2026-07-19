@@ -1,8 +1,11 @@
+import { useLanguage } from "../i18n/LanguageContext";
 import Container from "../components/ui/Container";
 import Button from "../components/ui/Button";
 import Icon from "../components/ui/Icon";
 
 export default function NotFound() {
+  const { t } = useLanguage();
+
   return (
     <section className="section">
       <Container className="flex flex-col items-center py-16 text-center">
@@ -13,18 +16,15 @@ export default function NotFound() {
           404
         </p>
         <h1 className="mt-4 text-2xl font-bold text-gray-900 sm:text-3xl">
-          This Page Didn't Take Root
+          {t("notFound.title")}
         </h1>
-        <p className="mt-3 max-w-md text-gray-600">
-          The page you're looking for has been moved, pruned, or never grew here
-          in the first place.
-        </p>
+        <p className="mt-3 max-w-md text-gray-600">{t("notFound.text")}</p>
         <div className="mt-8 flex flex-wrap justify-center gap-4">
           <Button to="/" icon="arrow-up-right">
-            Back To Home
+            {t("notFound.home")}
           </Button>
           <Button to="/services" variant="outline" icon="arrow-up-right">
-            Browse Services
+            {t("notFound.browse")}
           </Button>
         </div>
       </Container>

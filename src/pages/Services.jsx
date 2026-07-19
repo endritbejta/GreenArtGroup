@@ -1,3 +1,4 @@
+import { useLanguage, useLocalized } from "../i18n/LanguageContext";
 import Container from "../components/ui/Container";
 import PageHero from "../components/common/PageHero";
 import ServiceCard from "../components/common/ServiceCard";
@@ -6,18 +7,24 @@ import CTASection from "../components/common/CTASection";
 import { services } from "../data/services";
 
 export default function Services() {
+  const { t } = useLanguage();
+  const localizedServices = useLocalized(services);
+
   return (
     <>
       <PageHero
-        title="Our Green Services"
-        subtitle="Every kind of garden work — from a single lawn cut to complete landscape transformations, indoors and out."
-        breadcrumbs={[{ label: "Home", to: "/" }, { label: "Services" }]}
+        title={t("servicesPage.heroTitle")}
+        subtitle={t("servicesPage.heroSubtitle")}
+        breadcrumbs={[
+          { label: t("nav.home"), to: "/" },
+          { label: t("nav.services") },
+        ]}
       />
 
       <section className="section">
         <Container>
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {services.map((service, index) => (
+            {localizedServices.map((service, index) => (
               <AnimateIn
                 key={service.id}
                 delay={(index % 3) * 100}
@@ -31,8 +38,8 @@ export default function Services() {
       </section>
 
       <CTASection
-        title="Not Sure Which Service You Need?"
-        subtitle="Describe your garden and we'll recommend the right service — the site visit and quote are always free."
+        title={t("servicesPage.ctaTitle")}
+        subtitle={t("servicesPage.ctaSubtitle")}
       />
     </>
   );

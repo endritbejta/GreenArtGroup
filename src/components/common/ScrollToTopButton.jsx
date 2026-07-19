@@ -1,14 +1,16 @@
+import { useLanguage } from "../../i18n/LanguageContext";
 import { useScrolledPast } from "../../hooks/useScrollPosition";
 import { cn } from "../../utils/cn";
 import Icon from "../ui/Icon";
 
 export default function ScrollToTopButton() {
+  const { t } = useLanguage();
   const visible = useScrolledPast(400);
 
   return (
     <button
       type="button"
-      aria-label="Scroll to top"
+      aria-label={t("common.scrollTop")}
       tabIndex={visible ? 0 : -1}
       onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
       className={cn(

@@ -1,3 +1,4 @@
+import { useLanguage, useLocalized } from "../i18n/LanguageContext";
 import Container from "../components/ui/Container";
 import SectionHeading from "../components/ui/SectionHeading";
 import Accordion from "../components/ui/Accordion";
@@ -9,12 +10,18 @@ import { contactFaqs } from "../data/company";
 import { SITE } from "../constants/site";
 
 export default function Contact() {
+  const { t } = useLanguage();
+  const faqs = useLocalized(contactFaqs);
+
   return (
     <>
       <PageHero
-        title="Let's Talk About Your Garden"
-        subtitle="Free site visits, honest advice and quotes with no obligation — get in touch however suits you."
-        breadcrumbs={[{ label: "Home", to: "/" }, { label: "Contact" }]}
+        title={t("contactPage.heroTitle")}
+        subtitle={t("contactPage.heroSubtitle")}
+        breadcrumbs={[
+          { label: t("nav.home"), to: "/" },
+          { label: t("nav.contact") },
+        ]}
       />
 
       {/* Info + form */}
@@ -26,9 +33,9 @@ export default function Contact() {
           <AnimateIn delay={150} className="lg:col-span-3">
             <div className="rounded-3xl bg-white p-6 shadow-soft sm:p-10">
               <SectionHeading
-                eyebrow="Get In Touch"
-                title="Send Us A Message"
-                subtitle="Tell us a little about your space and we'll reply within one business day."
+                eyebrow={t("contactPage.formEyebrow")}
+                title={t("contactPage.formTitle")}
+                subtitle={t("contactPage.formSubtitle")}
               />
               <div className="mt-8">
                 <ContactForm />
@@ -44,7 +51,7 @@ export default function Contact() {
           <AnimateIn>
             <div className="overflow-hidden rounded-3xl shadow-soft">
               <iframe
-                title={`Map showing the location of ${SITE.name}`}
+                title={t("contactPage.mapTitle", { name: SITE.name })}
                 src={`https://www.google.com/maps?q=${encodeURIComponent(SITE.mapQuery)}&output=embed`}
                 className="h-96 w-full border-0"
                 loading="lazy"
@@ -61,13 +68,13 @@ export default function Contact() {
         <Container className="grid items-start gap-12 lg:grid-cols-5">
           <div className="lg:col-span-2">
             <SectionHeading
-              eyebrow="FAQ"
-              title="Before You Call"
-              subtitle="Quick answers to the questions we hear most often."
+              eyebrow={t("contactPage.faqEyebrow")}
+              title={t("contactPage.faqTitle")}
+              subtitle={t("contactPage.faqSubtitle")}
             />
           </div>
           <AnimateIn delay={150} className="lg:col-span-3">
-            <Accordion items={contactFaqs} />
+            <Accordion items={faqs} />
           </AnimateIn>
         </Container>
       </section>

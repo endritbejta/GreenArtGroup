@@ -1,11 +1,15 @@
 import { useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import { NAV_LINKS, SITE } from "../../constants/site";
+import { useLanguage } from "../../i18n/LanguageContext";
 import { cn } from "../../utils/cn";
 import Button from "../ui/Button";
 import Icon from "../ui/Icon";
+import LanguageSwitcher from "./LanguageSwitcher";
 
 export default function MobileMenu({ open, onClose }) {
+  const { t } = useLanguage();
+
   useEffect(() => {
     const onKeyDown = (event) => {
       if (event.key === "Escape") onClose();
@@ -54,7 +58,7 @@ export default function MobileMenu({ open, onClose }) {
           <button
             type="button"
             onClick={onClose}
-            aria-label="Close menu"
+            aria-label={t("common.closeMenu")}
             className="flex h-9 w-9 items-center justify-center rounded-full text-gray-500 transition-colors hover:bg-gray-100"
           >
             <Icon name="x" className="h-5 w-5" />
@@ -78,16 +82,17 @@ export default function MobileMenu({ open, onClose }) {
                     )
                   }
                 >
-                  {link.label}
+                  {t(`nav.${link.key}`)}
                 </NavLink>
               </li>
             ))}
           </ul>
+          <LanguageSwitcher className="mt-5 w-fit" />
         </nav>
 
         <div className="space-y-4 border-t border-gray-100 p-5">
           <Button to="/contact" onClick={onClose} icon="arrow-up-right" className="w-full">
-            Get In Touch
+            {t("common.getInTouch")}
           </Button>
           <a
             href={`tel:${SITE.phone.replace(/[^+\d]/g, "")}`}

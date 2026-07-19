@@ -1,11 +1,14 @@
+import { useLanguage } from "../../i18n/LanguageContext";
 import Icon from "../ui/Icon";
 
 function Stars({ rating }) {
+  const { t } = useLanguage();
+
   return (
     <div
       className="flex gap-0.5"
       role="img"
-      aria-label={`Rated ${rating} out of 5 stars`}
+      aria-label={t("common.rated", { rating })}
     >
       {Array.from({ length: 5 }, (_, i) => (
         <Icon
@@ -18,6 +21,7 @@ function Stars({ rating }) {
   );
 }
 
+/** Expects an already-localized testimonial object. */
 export default function TestimonialCard({ testimonial }) {
   return (
     <figure className="flex h-full flex-col rounded-3xl bg-white p-6 shadow-soft">

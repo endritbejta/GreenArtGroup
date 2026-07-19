@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useLanguage, useLocalized } from "../../i18n/LanguageContext";
 import Input from "../ui/Input";
 import Textarea from "../ui/Textarea";
 import Button from "../ui/Button";
@@ -14,24 +15,26 @@ const INITIAL_VALUES = {
   message: "",
 };
 
-function validate(values) {
-  const errors = {};
-  if (!values.name.trim()) errors.name = "Please enter your name.";
-  if (!values.email.trim()) {
-    errors.email = "Please enter your email address.";
-  } else if (!EMAIL_PATTERN.test(values.email)) {
-    errors.email = "Please enter a valid email address.";
-  }
-  if (values.message.trim().length < 10) {
-    errors.message = "Please tell us a little more (at least 10 characters).";
-  }
-  return errors;
-}
-
 export default function ContactForm() {
+  const { t } = useLanguage();
+  const localizedServices = useLocalized(services);
   const [values, setValues] = useState(INITIAL_VALUES);
   const [errors, setErrors] = useState({});
   const [submitted, setSubmitted] = useState(false);
+
+  const validate = () => {
+    const nextErrors = {};
+    if (!values.name.trim()) nextErrors.name = t("form.errorName");
+    if (!values.email.trim()) {
+      nextErrors.email = t("form.errorEmail");
+    } else if (!EMAIL_PATTERN.test(values.email)) {
+      nextErrors.email = t("form.errorEmailInvalid");
+    }
+    if (values.message.trim().length < 10) {
+      nextErrors.message = t("form.errorMessage");
+    }
+    return nextErrors;
+  };
 
   const handleChange = (event) => {
     const { name, value } = event.target;
@@ -41,7 +44,7 @@ export default function ContactForm() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    const nextErrors = validate(values);
+    const nextErrors = validate();
     if (Object.keys(nextErrors).length > 0) {
       setErrors(nextErrors);
       return;
@@ -60,13 +63,14 @@ export default function ContactForm() {
         <span className="flex h-14 w-14 items-center justify-center rounded-full bg-primary-500 text-2xl text-white">
           ✓
         </span>
-        <h3 className="mt-4 text-xl font-bold text-gray-900">Message Sent!</h3>
+        <h3 className="mt-4 text-xl font-bold text-gray-900">
+          {t("form.successTitle")}
+        </h3>
         <p className="mt-2 max-w-sm text-sm text-gray-600">
-          Thanks for reaching out — one of our team will get back to you within
-          one business day.
+          {t("form.successText")}
         </p>
         <Button onClick={() => setSubmitted(false)} variant="outline" className="mt-6">
-          Send Another Message
+          {t("form.sendAnother")}
         </Button>
       </div>
     );
@@ -78,8 +82,8 @@ export default function ContactForm() {
         <Input
           id="name"
           name="name"
-          label="Full Name *"
-          placeholder="Jane Doe"
+          label={t("form.name")}
+          placeholder={t("form.namePlaceholder")}
           value={values.name}
           onChange={handleChange}
           error={errors.name}
@@ -89,8 +93,8 @@ export default function ContactForm() {
           id="email"
           name="email"
           type="email"
-          label="Email Address *"
-          placeholder="jane@example.com"
+          label={t("form.email")}
+          placeholder={t("form.emailPlaceholder")}
           value={values.email}
           onChange={handleChange}
           error={errors.email}
@@ -102,8 +106,8 @@ export default function ContactForm() {
           id="phone"
           name="phone"
           type="tel"
-          label="Phone (optional)"
-          placeholder="+1 (555) 000-0000"
+          label={t("form.phone")}
+          placeholder={t("form.phonePlaceholder")}
           value={values.phone}
           onChange={handleChange}
           autoComplete="tel"
@@ -113,7 +117,7 @@ export default function ContactForm() {
             htmlFor="service"
             className="mb-1.5 block text-sm font-medium text-gray-900"
           >
-            Service of Interest
+            {t("form.service")}
           </label>
           <select
             id="service"
@@ -122,8 +126,8 @@ export default function ContactForm() {
             onChange={handleChange}
             className="w-full rounded-xl border border-gray-200 bg-white px-4 py-3 text-sm text-gray-900 transition-colors focus:border-primary-500"
           >
-            <option value="">Select a service…</option>
-            {services.map((service) => (
+            <option value="">{t("form.servicePlaceholder")}</option>
+            {localizedServices.map((service) => (
               <option key={service.slug} value={service.slug}>
                 {service.title}
               </option>
@@ -134,14 +138,14 @@ export default function ContactForm() {
       <Textarea
         id="message"
         name="message"
-        label="Your Message *"
-        placeholder="Tell us about your space and what you'd like to achieve…"
+        label={t("form.message")}
+        placeholder={t("form.messagePlaceholder")}
         value={values.message}
         onChange={handleChange}
         error={errors.message}
       />
       <Button type="submit" icon="arrow-up-right" size="lg">
-        Send Message
+        {t("form.submit")}
       </Button>
     </form>
   );

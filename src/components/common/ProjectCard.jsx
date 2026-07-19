@@ -1,6 +1,7 @@
 import Badge from "../ui/Badge";
 import Icon from "../ui/Icon";
 
+/** Expects an already-localized project object with a categoryLabel. */
 export default function ProjectCard({ project }) {
   return (
     <article className="group overflow-hidden rounded-3xl bg-white shadow-soft transition-all duration-300 hover:-translate-y-1.5 hover:shadow-lift">
@@ -12,7 +13,7 @@ export default function ProjectCard({ project }) {
           className="aspect-[4/3] w-full object-cover transition-transform duration-500 group-hover:scale-105"
         />
         <Badge variant="white" className="absolute left-4 top-4">
-          {project.category}
+          {project.categoryLabel}
         </Badge>
       </div>
       <div className="p-6">

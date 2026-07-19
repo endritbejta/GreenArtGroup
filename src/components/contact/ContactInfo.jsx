@@ -1,27 +1,27 @@
 import { SITE } from "../../constants/site";
+import { useLanguage, useLocalized } from "../../i18n/LanguageContext";
 import Icon from "../ui/Icon";
 
-const items = [
-  {
-    icon: "map-pin",
-    title: "Visit Us",
-    lines: [SITE.address],
-  },
-  {
-    icon: "phone",
-    title: "Call Us",
-    lines: [SITE.phone],
-    href: `tel:${SITE.phone.replace(/[^+\d]/g, "")}`,
-  },
-  {
-    icon: "mail",
-    title: "Email Us",
-    lines: [SITE.email],
-    href: `mailto:${SITE.email}`,
-  },
-];
-
 export default function ContactInfo() {
+  const { t } = useLanguage();
+  const hours = useLocalized(SITE.hours);
+
+  const items = [
+    { icon: "map-pin", title: t("contactPage.visit"), lines: [SITE.address] },
+    {
+      icon: "phone",
+      title: t("contactPage.call"),
+      lines: [SITE.phone],
+      href: `tel:${SITE.phone.replace(/[^+\d]/g, "")}`,
+    },
+    {
+      icon: "mail",
+      title: t("contactPage.email"),
+      lines: [SITE.email],
+      href: `mailto:${SITE.email}`,
+    },
+  ];
+
   return (
     <div className="space-y-6">
       <ul className="space-y-4">
@@ -58,10 +58,10 @@ export default function ContactInfo() {
       <div className="rounded-2xl bg-white p-5 shadow-soft">
         <h3 className="flex items-center gap-2 text-sm font-bold text-gray-900">
           <Icon name="clock" className="h-4 w-4 text-primary-600" />
-          Business Hours
+          {t("contactPage.hoursTitle")}
         </h3>
         <dl className="mt-3 space-y-2">
-          {SITE.hours.map((entry) => (
+          {hours.map((entry) => (
             <div key={entry.days} className="flex justify-between text-sm">
               <dt className="text-gray-600">{entry.days}</dt>
               <dd className="font-medium text-gray-900">{entry.time}</dd>
@@ -71,7 +71,9 @@ export default function ContactInfo() {
       </div>
 
       <div className="rounded-2xl bg-white p-5 shadow-soft">
-        <h3 className="text-sm font-bold text-gray-900">Follow Us</h3>
+        <h3 className="text-sm font-bold text-gray-900">
+          {t("contactPage.follow")}
+        </h3>
         <ul className="mt-3 flex gap-2">
           {SITE.socials.map((social) => (
             <li key={social.name}>

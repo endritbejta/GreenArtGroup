@@ -1,3 +1,4 @@
+import { useLanguage, useLocalized } from "../i18n/LanguageContext";
 import Container from "../components/ui/Container";
 import SectionHeading from "../components/ui/SectionHeading";
 import Icon from "../components/ui/Icon";
@@ -15,26 +16,38 @@ const STORY_IMAGE =
   "https://images.unsplash.com/photo-1523712999610-f77fbcfc3843?auto=format&fit=crop&w=900&q=80";
 
 export default function About() {
+  const { t } = useLanguage();
+  const story = useLocalized(companyStory);
+  const localizedMission = useLocalized(mission);
+  const localizedVision = useLocalized(vision);
+  const localizedValues = useLocalized(values);
+  const localizedTimeline = useLocalized(timeline);
+  const localizedTeam = useLocalized(team);
+  const localizedStats = useLocalized(stats);
+
   return (
     <>
       <PageHero
-        title="Rooted In Craft, Growing Since 2008"
-        subtitle="The people, values and story behind GreenArt Group."
-        breadcrumbs={[{ label: "Home", to: "/" }, { label: "About" }]}
+        title={t("aboutPage.heroTitle")}
+        subtitle={t("aboutPage.heroSubtitle")}
+        breadcrumbs={[
+          { label: t("nav.home"), to: "/" },
+          { label: t("nav.about") },
+        ]}
       />
 
       {/* Story */}
       <section className="section">
         <Container className="grid items-center gap-12 lg:grid-cols-2">
           <SectionHeading
-            eyebrow="Our Story"
-            title="From One Truck To A Full Green Team"
-            subtitle={companyStory}
+            eyebrow={t("aboutPage.storyEyebrow")}
+            title={t("aboutPage.storyTitle")}
+            subtitle={story}
           />
           <AnimateIn delay={150}>
             <img
               src={STORY_IMAGE}
-              alt="Sunlight streaming through a lush green forest"
+              alt={t("aboutPage.storyImageAlt")}
               loading="lazy"
               className="aspect-[4/3] w-full rounded-3xl object-cover"
             />
@@ -46,8 +59,8 @@ export default function About() {
       <section className="section pt-0">
         <Container className="grid gap-6 md:grid-cols-2">
           {[
-            { icon: "leaf", title: "Our Mission", text: mission },
-            { icon: "award", title: "Our Vision", text: vision },
+            { icon: "leaf", title: t("aboutPage.mission"), text: localizedMission },
+            { icon: "award", title: t("aboutPage.vision"), text: localizedVision },
           ].map((item, index) => (
             <AnimateIn key={item.title} delay={index * 100} className="h-full">
               <div className="h-full rounded-3xl bg-primary-900 p-8 text-white">
@@ -68,12 +81,12 @@ export default function About() {
       <section className="section bg-gray-50">
         <Container>
           <SectionHeading
-            eyebrow="Our Values"
-            title="What We Stand For"
+            eyebrow={t("aboutPage.valuesEyebrow")}
+            title={t("aboutPage.valuesTitle")}
             align="center"
           />
           <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-            {values.map((value, index) => (
+            {localizedValues.map((value, index) => (
               <AnimateIn key={value.id} delay={index * 100} className="h-full">
                 <FeatureCard {...value} />
               </AnimateIn>
@@ -86,12 +99,12 @@ export default function About() {
       <section className="section">
         <Container>
           <SectionHeading
-            eyebrow="Our Journey"
-            title="Milestones Along The Way"
+            eyebrow={t("aboutPage.journeyEyebrow")}
+            title={t("aboutPage.journeyTitle")}
             align="center"
           />
           <ol className="relative mx-auto mt-12 max-w-2xl space-y-10 border-l-2 border-primary-100 pl-8">
-            {timeline.map((milestone, index) => (
+            {localizedTimeline.map((milestone, index) => (
               <AnimateIn key={milestone.id} delay={index * 100}>
                 <li className="relative">
                   <span
@@ -118,13 +131,13 @@ export default function About() {
       <section className="section bg-gray-50">
         <Container>
           <SectionHeading
-            eyebrow="Our Team"
-            title="Meet Our Green Experts"
-            subtitle="Designers, arborists and horticulturists who genuinely love what they do."
+            eyebrow={t("aboutPage.teamEyebrow")}
+            title={t("aboutPage.teamTitle")}
+            subtitle={t("aboutPage.teamSubtitle")}
             align="center"
           />
           <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {team.map((member, index) => (
+            {localizedTeam.map((member, index) => (
               <AnimateIn key={member.id} delay={index * 100} className="h-full">
                 <TeamCard member={member} />
               </AnimateIn>
@@ -137,7 +150,7 @@ export default function About() {
       <section className="section">
         <Container>
           <div className="grid grid-cols-2 gap-6 rounded-3xl bg-white p-8 shadow-soft md:grid-cols-4">
-            {stats.map((stat) => (
+            {localizedStats.map((stat) => (
               <StatCard key={stat.id} {...stat} />
             ))}
           </div>

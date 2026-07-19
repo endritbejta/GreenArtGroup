@@ -1,4 +1,5 @@
 import { useParams, Navigate } from "react-router-dom";
+import { useLanguage, useLocalized } from "../i18n/LanguageContext";
 import Container from "../components/ui/Container";
 import SectionHeading from "../components/ui/SectionHeading";
 import Accordion from "../components/ui/Accordion";
@@ -13,13 +14,15 @@ import { services, getServiceBySlug } from "../data/services";
 
 export default function ServiceDetails() {
   const { slug } = useParams();
-  const service = getServiceBySlug(slug);
+  const { t } = useLanguage();
+  const service = useLocalized(getServiceBySlug(slug) ?? null);
+  const localizedServices = useLocalized(services);
 
   if (!service) {
     return <Navigate to="/404" replace />;
   }
 
-  const related = services
+  const related = localizedServices
     .filter((item) => item.slug !== service.slug)
     .slice(0, 3);
 
@@ -29,8 +32,8 @@ export default function ServiceDetails() {
         title={service.title}
         subtitle={service.shortDescription}
         breadcrumbs={[
-          { label: "Home", to: "/" },
-          { label: "Services", to: "/services" },
+          { label: t("nav.home"), to: "/" },
+          { label: t("nav.services"), to: "/services" },
           { label: service.title },
         ]}
       />
@@ -47,13 +50,13 @@ export default function ServiceDetails() {
           </AnimateIn>
           <div>
             <SectionHeading
-              eyebrow="Overview"
-              title={`${service.title} Done Properly`}
+              eyebrow={t("serviceDetails.overviewEyebrow")}
+              title={t("serviceDetails.overviewTitle", { title: service.title })}
               subtitle={service.description}
             />
             <AnimateIn delay={150}>
               <Button to="/contact" icon="arrow-up-right" className="mt-8">
-                Request This Service
+                {t("serviceDetails.request")}
               </Button>
             </AnimateIn>
           </div>
@@ -64,8 +67,8 @@ export default function ServiceDetails() {
       <section className="section bg-gray-50">
         <Container>
           <SectionHeading
-            eyebrow="Benefits"
-            title="What You Get"
+            eyebrow={t("serviceDetails.benefitsEyebrow")}
+            title={t("serviceDetails.benefitsTitle")}
             align="center"
           />
           <ul className="mx-auto mt-12 grid max-w-4xl gap-4 sm:grid-cols-2">
@@ -86,7 +89,11 @@ export default function ServiceDetails() {
       {/* Gallery */}
       <section className="section">
         <Container>
-          <SectionHeading eyebrow="Gallery" title="Recent Work" align="center" />
+          <SectionHeading
+            eyebrow={t("serviceDetails.galleryEyebrow")}
+            title={t("serviceDetails.galleryTitle")}
+            align="center"
+          />
           <div className="mt-12">
             <ImageGrid images={service.gallery} altPrefix={service.title} />
           </div>
@@ -98,9 +105,9 @@ export default function ServiceDetails() {
         <Container className="grid items-start gap-12 lg:grid-cols-5">
           <div className="lg:col-span-2">
             <SectionHeading
-              eyebrow="FAQ"
-              title="Common Questions"
-              subtitle="Everything clients usually ask before booking this service. Still unsure? We're one call away."
+              eyebrow={t("serviceDetails.faqEyebrow")}
+              title={t("serviceDetails.faqTitle")}
+              subtitle={t("serviceDetails.faqSubtitle")}
             />
           </div>
           <AnimateIn delay={150} className="lg:col-span-3">
@@ -113,8 +120,8 @@ export default function ServiceDetails() {
       <section className="section">
         <Container>
           <SectionHeading
-            eyebrow="More Services"
-            title="You Might Also Need"
+            eyebrow={t("serviceDetails.relatedEyebrow")}
+            title={t("serviceDetails.relatedTitle")}
             align="center"
           />
           <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -128,8 +135,8 @@ export default function ServiceDetails() {
       </section>
 
       <CTASection
-        title={`Ready To Book ${service.title}?`}
-        subtitle="Get a free, no-obligation quote — we'll visit, listen and come back with a clear plan and price."
+        title={t("serviceDetails.ctaTitle", { title: service.title })}
+        subtitle={t("serviceDetails.ctaSubtitle")}
       />
     </>
   );

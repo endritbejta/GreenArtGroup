@@ -1,7 +1,11 @@
 import { Link } from "react-router-dom";
+import { useLanguage } from "../../i18n/LanguageContext";
 import Icon from "../ui/Icon";
 
+/** Expects an already-localized service object. */
 export default function ServiceCard({ service }) {
+  const { t } = useLanguage();
+
   return (
     <article className="group flex h-full flex-col overflow-hidden rounded-3xl bg-white shadow-soft transition-all duration-300 hover:-translate-y-1.5 hover:shadow-lift">
       <div className="relative overflow-hidden">
@@ -23,9 +27,9 @@ export default function ServiceCard({ service }) {
         <Link
           to={`/services/${service.slug}`}
           className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-primary-600 transition-colors hover:text-primary-800"
-          aria-label={`Learn more about ${service.title}`}
+          aria-label={t("common.learnMoreAbout", { title: service.title })}
         >
-          Learn More
+          {t("common.learnMore")}
           <Icon
             name="arrow-up-right"
             className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"

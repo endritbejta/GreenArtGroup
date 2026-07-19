@@ -1,21 +1,22 @@
 import { Link } from "react-router-dom";
 import { NAV_LINKS, SITE } from "../../constants/site";
 import { services } from "../../data/services";
+import { useLanguage, useLocalized } from "../../i18n/LanguageContext";
 import Container from "../ui/Container";
 import Icon from "../ui/Icon";
 import Logo from "./Logo";
 import Newsletter from "../common/Newsletter";
 
 export default function Footer() {
+  const { t } = useLanguage();
+  const localizedServices = useLocalized(services);
+
   return (
     <footer className="bg-primary-900 text-primary-100/80">
       <Container className="grid gap-10 py-16 sm:grid-cols-2 lg:grid-cols-4">
         <div>
           <Logo light />
-          <p className="mt-4 text-sm leading-relaxed">
-            Every kind of garden work — design, build, planting and year-round
-            care from one dedicated team.
-          </p>
+          <p className="mt-4 text-sm leading-relaxed">{t("footer.tagline")}</p>
           <ul className="mt-5 flex gap-2">
             {SITE.socials.map((social) => (
               <li key={social.name}>
@@ -35,25 +36,25 @@ export default function Footer() {
 
         <nav aria-label="Footer">
           <h3 className="text-sm font-bold uppercase tracking-wide text-white">
-            Quick Links
+            {t("footer.quickLinks")}
           </h3>
           <ul className="mt-4 space-y-2.5 text-sm">
             {NAV_LINKS.map((link) => (
               <li key={link.to}>
                 <Link to={link.to} className="transition-colors hover:text-white">
-                  {link.label}
+                  {t(`nav.${link.key}`)}
                 </Link>
               </li>
             ))}
           </ul>
         </nav>
 
-        <nav aria-label="Services">
+        <nav aria-label={t("footer.services")}>
           <h3 className="text-sm font-bold uppercase tracking-wide text-white">
-            Services
+            {t("footer.services")}
           </h3>
           <ul className="mt-4 space-y-2.5 text-sm">
-            {services.slice(0, 6).map((service) => (
+            {localizedServices.slice(0, 6).map((service) => (
               <li key={service.slug}>
                 <Link
                   to={`/services/${service.slug}`}
@@ -69,7 +70,7 @@ export default function Footer() {
         <div className="space-y-8">
           <div>
             <h3 className="text-sm font-bold uppercase tracking-wide text-white">
-              Contact
+              {t("footer.contact")}
             </h3>
             <ul className="mt-4 space-y-2.5 text-sm">
               <li className="flex items-start gap-2">
@@ -103,9 +104,9 @@ export default function Footer() {
       <div className="border-t border-white/10">
         <Container className="flex flex-col items-center justify-between gap-2 py-6 text-xs sm:flex-row">
           <p>
-            © {new Date().getFullYear()} {SITE.name}. All rights reserved.
+            © {new Date().getFullYear()} {SITE.name}. {t("footer.rights")}
           </p>
-          <p>Growing greener spaces since 2008.</p>
+          <p>{t("footer.since")}</p>
         </Container>
       </div>
     </footer>

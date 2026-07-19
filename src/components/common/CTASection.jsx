@@ -1,11 +1,11 @@
+import { useLanguage } from "../../i18n/LanguageContext";
 import Container from "../ui/Container";
 import Button from "../ui/Button";
 import AnimateIn from "./AnimateIn";
 
-export default function CTASection({
-  title = "Ready To Grow Something Beautiful?",
-  subtitle = "Tell us about your space and we'll come back with ideas, a plan and a free, no-obligation quote.",
-}) {
+export default function CTASection({ title, subtitle }) {
+  const { t } = useLanguage();
+
   return (
     <section className="section pt-0">
       <Container>
@@ -21,15 +21,17 @@ export default function CTASection({
             />
             <div className="relative mx-auto max-w-2xl">
               <h2 className="text-3xl font-bold leading-tight text-white sm:text-4xl">
-                {title}
+                {title ?? t("cta.title")}
               </h2>
-              <p className="mt-4 text-primary-100">{subtitle}</p>
+              <p className="mt-4 text-primary-100">
+                {subtitle ?? t("cta.subtitle")}
+              </p>
               <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
                 <Button to="/contact" variant="primary" icon="arrow-up-right">
-                  Get A Free Quote
+                  {t("common.getFreeQuote")}
                 </Button>
                 <Button to="/services" variant="outline-white" icon="arrow-up-right">
-                  Explore Services
+                  {t("common.exploreServices")}
                 </Button>
               </div>
             </div>

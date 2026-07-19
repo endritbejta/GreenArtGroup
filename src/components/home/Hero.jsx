@@ -1,3 +1,4 @@
+import { useLanguage, useLocalized } from "../../i18n/LanguageContext";
 import Container from "../ui/Container";
 import Button from "../ui/Button";
 import { stats } from "../../data/stats";
@@ -9,6 +10,9 @@ const HERO_IMAGE_SECONDARY =
   "https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?auto=format&fit=crop&w=600&q=80";
 
 export default function Hero() {
+  const { t } = useLanguage();
+  const localizedStats = useLocalized(stats);
+
   return (
     <section className="bg-gray-50 py-8 md:py-12">
       <Container>
@@ -17,22 +21,20 @@ export default function Hero() {
           <div className="flex animate-fade-up flex-col justify-center rounded-3xl bg-primary-500 p-8 text-white sm:p-12">
             <p className="mb-4 flex items-center gap-3 text-xs font-semibold uppercase tracking-[0.2em] text-primary-100">
               <span aria-hidden="true" className="h-px w-8 bg-current" />
-              Every Kind Of Garden Work
+              {t("hero.eyebrow")}
             </p>
             <h1 className="text-4xl font-extrabold leading-[1.1] sm:text-5xl">
-              Grow The Outdoor Space You've Always Imagined
+              {t("hero.title")}
             </h1>
             <p className="mt-5 max-w-md leading-relaxed text-primary-50">
-              From lawn care and garden design to full landscape builds and
-              year-round maintenance — one expert team for everything green,
-              inside and out.
+              {t("hero.subtitle")}
             </p>
             <div className="mt-8 flex flex-wrap gap-4">
               <Button to="/contact" variant="white" icon="arrow-up-right">
-                Get A Free Quote
+                {t("common.getFreeQuote")}
               </Button>
               <Button to="/services" variant="outline-white" icon="arrow-up-right">
-                Explore Services
+                {t("common.exploreServices")}
               </Button>
             </div>
           </div>
@@ -41,12 +43,12 @@ export default function Hero() {
           <div className="relative hidden animate-fade-in lg:block">
             <img
               src={HERO_IMAGE}
-              alt="Gardener watering a bed of colorful flowers"
+              alt={t("hero.imageAlt")}
               className="h-full w-full rounded-3xl object-cover"
             />
             <img
               src={HERO_IMAGE_SECONDARY}
-              alt="Lush garden path in full bloom"
+              alt={t("hero.imageAltSecondary")}
               loading="lazy"
               className="absolute -bottom-5 -left-5 hidden w-44 rounded-2xl border-4 border-gray-50 object-cover shadow-lift xl:block"
             />
@@ -55,7 +57,7 @@ export default function Hero() {
 
         {/* Stats strip */}
         <div className="mt-6 grid grid-cols-2 gap-6 rounded-3xl bg-white p-8 shadow-soft md:grid-cols-4">
-          {stats.map((stat) => (
+          {localizedStats.map((stat) => (
             <StatCard key={stat.id} {...stat} />
           ))}
         </div>
