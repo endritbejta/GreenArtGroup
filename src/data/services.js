@@ -7,17 +7,17 @@ export const services = [
   {
     id: 1,
     slug: "lawn-care",
-    title: L("Lawn Care", "Kujdesi për Lëndinën"),
+    title: L("Lawn Care", "Kujdesi për Kopshtin"),
     icon: "sprout",
     featured: true,
     image: img("photo-1568605114967-8130f3a36994"),
     shortDescription: L(
       "Mowing, fertilizing, aeration and seasonal treatments that keep your lawn thick, healthy and deep green all year.",
-      "Kositje, plehërim, ajrosje dhe trajtime sezonale që e mbajnë lëndinën tuaj të dendur, të shëndetshme dhe të gjelbër gjatë gjithë vitit."
+      "Kositje, plehërim, ajrosje dhe trajtime sezonale që e mbajnë kopshtin tuaj të dendur, të shëndetshëm dhe të gjelbër gjatë gjithë vitit."
     ),
     description: L(
       "A great lawn doesn't happen by accident. Our lawn care programs combine precision mowing, soil-tested fertilization, aeration, overseeding and weed control into a schedule tailored to your grass type and local climate. Whether you need a weekly maintenance visit or a full lawn renovation, our certified technicians treat your turf like their own.",
-      "Një lëndinë e bukur nuk krijohet rastësisht. Programet tona të kujdesit kombinojnë kositjen e saktë, plehërimin e bazuar në analizën e tokës, ajrosjen, mbjelljen shtesë dhe kontrollin e barërave të këqija në një plan të përshtatur për llojin e barit dhe klimën tuaj lokale. Qoftë për një vizitë javore mirëmbajtjeje apo për një rinovim të plotë të lëndinës, teknikët tanë të certifikuar kujdesen për barin tuaj si për të tyren."
+      "Një kopsht i bukur nuk krijohet rastësisht. Programet tona të kujdesit kombinojnë kositjen e saktë, plehërimin e bazuar në analizën e tokës, ajrosjen, mbjelljen shtesë dhe kontrollin e barërave të këqija në një plan të përshtatur për llojin e barit dhe klimën tuaj lokale. Qoftë për një vizitë javore mirëmbajtjeje apo për një rinovim të plotë të kopshtit, teknikët tanë të certifikuar kujdesen për barin tuaj si për të tyren."
     ),
     benefits: [
       L(
@@ -50,11 +50,11 @@ export const services = [
       {
         question: L(
           "How often should my lawn be mowed?",
-          "Sa shpesh duhet kositur lëndina?"
+          "Sa shpesh duhet kositur kopshti?"
         ),
         answer: L(
           "During the growing season, most lawns benefit from weekly mowing. In slower months we switch to bi-weekly visits so the grass is never cut too short.",
-          "Gjatë sezonit të rritjes, shumica e lëndinave përfitojnë nga kositja javore. Në muajt më të ngadaltë kalojmë në vizita çdo dy javë, që bari të mos pritet kurrë shumë shkurt."
+          "Gjatë sezonit të rritjes, shumica e kopshteve përfitojnë nga kositja javore. Në muajt më të ngadaltë kalojmë në vizita çdo dy javë, që bari të mos pritet kurrë shumë shkurt."
         ),
       },
       {
@@ -70,7 +70,7 @@ export const services = [
       {
         question: L(
           "Can you revive a damaged lawn?",
-          "A mund ta rikuperoni një lëndinë të dëmtuar?"
+          "A mund ta rikuperoni një kopsht të dëmtuar?"
         ),
         answer: L(
           "In most cases, yes. We start with a soil test, then build a renovation plan combining aeration, overseeding and fertilization. Full recovery usually takes one to two seasons.",
@@ -150,72 +150,6 @@ export const services = [
         answer: L(
           "Yes — design and build under one roof is our specialty. It keeps budgets honest and the finished garden true to the plan.",
           "Po — dizajni dhe ndërtimi nën një çati është specialiteti ynë. Kjo i mban buxhetet të sakta dhe kopshtin përfundimtar besnik ndaj planit."
-        ),
-      },
-    ],
-  },
-  {
-    id: 3,
-    slug: "landscaping",
-    title: L("Landscaping", "Peizazhim"),
-    icon: "trees",
-    featured: true,
-    image: img("photo-1600585154340-be6161a56a0c"),
-    shortDescription: L(
-      "Complete landscape construction — patios, paths, planting, turf and water features built to last.",
-      "Ndërtim i plotë peizazhi — oborre, shtigje, mbjellje, lëndina dhe elemente uji të ndërtuara për të zgjatur."
-    ),
-    description: L(
-      "From a blank plot to a finished landscape, our construction teams handle grading, drainage, stonework, decking, planting and lawns. We manage the whole project with a single point of contact, transparent pricing and a workmanship guarantee, so transforming your outdoors feels exciting rather than stressful.",
-      "Nga një truall bosh deri te një peizazh i përfunduar, ekipet tona të ndërtimit merren me nivelimin, kullimin, punimet me gur, platformat e drurit, mbjelljet dhe lëndinat. E menaxhojmë gjithë projektin me një pikë të vetme kontakti, çmime transparente dhe garanci punimi, që transformimi i hapësirës suaj të jashtme të jetë emocionues dhe jo stresues."
-    ),
-    benefits: [
-      L(
-        "Full project management with one point of contact",
-        "Menaxhim i plotë projekti me një pikë të vetme kontakti"
-      ),
-      L(
-        "Patios, walkways, retaining walls and decking",
-        "Oborre, shtigje, mure mbajtëse dhe platforma druri"
-      ),
-      L(
-        "Drainage and grading done right the first time",
-        "Kullim dhe nivelim i bërë siç duhet që herën e parë"
-      ),
-      L(
-        "Mature tree and specimen plant sourcing",
-        "Sigurim pemësh të rritura dhe bimësh të veçanta"
-      ),
-      L(
-        "Workmanship guarantee on all hard landscaping",
-        "Garanci punimi për të gjitha punimet e forta"
-      ),
-    ],
-    gallery: [
-      img("photo-1600585154340-be6161a56a0c", 600),
-      img("photo-1600596542815-ffad4c1539a9", 600),
-      img("photo-1512917774080-9991f1c4c750", 600),
-    ],
-    faq: [
-      {
-        question: L("How much does landscaping cost?", "Sa kushton peizazhimi?"),
-        answer: L(
-          "Projects range widely — a simple planting refresh starts around $2,500, while full garden builds typically run $15,000 and up. We always provide a detailed, fixed quote first.",
-          "Projektet ndryshojnë shumë — një rifreskim i thjeshtë mbjelljeje fillon rreth 2,500 $, ndërsa ndërtimet e plota të kopshteve zakonisht kushtojnë 15,000 $ e lart. Gjithmonë japim fillimisht një ofertë të detajuar dhe fikse."
-        ),
-      },
-      {
-        question: L("Do you handle permits?", "A merreni me lejet?"),
-        answer: L(
-          "Yes. Where structural work, drainage or tree removal needs permits, we prepare and file the paperwork as part of the project.",
-          "Po. Kur punimet strukturore, kullimi ose heqja e pemëve kërkojnë leje, ne përgatisim dhe dorëzojmë dokumentacionin si pjesë të projektit."
-        ),
-      },
-      {
-        question: L("How disruptive is the build?", "Sa e bezdisshme është puna?"),
-        answer: L(
-          "We fence off work zones, protect access paths and leave the site tidy every evening. Most residential builds finish within two to six weeks.",
-          "Rrethojmë zonat e punës, mbrojmë shtigjet e kalimit dhe e lëmë terrenin të pastër çdo mbrëmje. Shumica e ndërtimeve rezidenciale përfundojnë brenda dy deri në gjashtë javësh."
         ),
       },
     ],
@@ -308,12 +242,12 @@ export const services = [
     ),
     description: L(
       "Hand-watering is the first thing busy garden owners give up on. We design and install smart irrigation — drip lines, pop-up sprinklers and weather-aware controllers — so every bed and lawn zone gets exactly the water it needs. We also service and winterize existing systems of any brand.",
-      "Ujitja me dorë është gjëja e parë që braktisin pronarët e zënë të kopshteve. Ne dizajnojmë dhe instalojmë ujitje inteligjente — linja pikuese, spërkatës dhe kontrollues që ndjekin motin — që çdo lehe dhe zonë lëndine të marrë saktësisht ujin që i duhet. Servisojmë dhe dimërojmë edhe sisteme ekzistuese të çdo marke."
+      "Ujitja me dorë është gjëja e parë që braktisin pronarët e zënë të kopshteve. Ne dizajnojmë dhe instalojmë ujitje inteligjente — linja pikuese, spërkatës dhe kontrollues që ndjekin motin — që çdo lehe dhe zonë kopshti të marrë saktësisht ujin që i duhet. Servisojmë dhe dimërojmë edhe sisteme ekzistuese të çdo marke."
     ),
     benefits: [
       L(
         "Zone-by-zone design for lawns, beds and pots",
-        "Dizajn zonë-për-zonë për lëndina, lehe dhe vazo"
+        "Dizajn zonë-për-zonë për kopshte, lehe dhe vazo"
       ),
       L(
         "Smart controllers that adjust to the weather",
@@ -669,7 +603,7 @@ export const services = [
     slug: "seasonal-maintenance",
     title: L("Seasonal Maintenance", "Mirëmbajtje Sezonale"),
     icon: "calendar",
-    featured: false,
+    featured: true,
     image: img("photo-1461354464878-ad92f492a5a0"),
     shortDescription: L(
       "Year-round garden care programs — spring prep, summer upkeep, autumn cleanup and winter protection.",

@@ -27,7 +27,7 @@ export const translations = {
       eyebrow: "Every Kind Of Garden Work",
       title: "Grow The Outdoor Space You've Always Imagined",
       subtitle:
-        "From lawn care and garden design to full landscape builds and year-round maintenance — one expert team for everything green, inside and out.",
+        "From lawn care and garden design to interior plants and year-round maintenance — one expert team for everything green, inside and out.",
       imageAlt: "Gardener watering a bed of colorful flowers",
       imageAltSecondary: "Lush garden path in full bloom",
     },
@@ -216,7 +216,7 @@ export const translations = {
       eyebrow: "Çdo Lloj Punimi Kopshti",
       title: "Krijo Hapësirën e Jashtme Që Ke Ëndërruar Gjithmonë",
       subtitle:
-        "Nga kujdesi për lëndinën dhe dizajni i kopshtit deri te ndërtimet e plota të peizazhit dhe mirëmbajtja gjithëvjetore — një ekip ekspert për gjithçka të gjelbër, brenda dhe jashtë.",
+        "Nga kujdesi për kopshtin dhe dizajni i kopshtit deri te bimët e brendshme dhe mirëmbajtja gjithëvjetore — një ekip ekspert për gjithçka të gjelbër, brenda dhe jashtë.",
       imageAlt: "Kopshtar duke ujitur një lehe me lule shumëngjyrëshe",
       imageAltSecondary: "Shteg kopshti i harlisur në lulëzim të plotë",
     },

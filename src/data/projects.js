@@ -6,9 +6,8 @@ const img = (id, w = 900) =>
 /** Stable category keys with localized labels, used for filtering. */
 export const categoryLabels = {
   "garden-design": L("Garden Design", "Dizajn Kopshti"),
-  landscaping: L("Landscaping", "Peizazhim"),
   commercial: L("Commercial", "Komerciale"),
-  "lawn-care": L("Lawn Care", "Kujdes Lëndine"),
+  "lawn-care": L("Lawn Care", "Kujdes Kopshti"),
   "interior-plants": L("Interior Plants", "Bimë të Brendshme"),
 };
 
@@ -21,22 +20,11 @@ export const projects = [
     image: img("photo-1466692476868-aef1dfb1e735"),
     description: L(
       "A steep, unusable slope terraced into three garden rooms with native planting, a play lawn and an outdoor dining terrace.",
-      "Një pjerrësi e papërdorshme e kthyer në tri dhoma kopshti me bimësi vendase, një lëndinë lojërash dhe një tarracë ngrënieje në natyrë."
+      "Një pjerrësi e papërdorshme e kthyer në tri dhoma kopshti me bimësi vendase, një hapësirë lojërash dhe një tarracë ngrënieje në natyrë."
     ),
   },
   {
     id: 2,
-    title: L("Modern Courtyard Retreat", "Oborr Modern Relaksi"),
-    category: "landscaping",
-    location: "Portland, OR",
-    image: img("photo-1600585154340-be6161a56a0c"),
-    description: L(
-      "Full courtyard rebuild with porcelain paving, architectural planting and integrated lighting for year-round evening use.",
-      "Rindërtim i plotë i oborrit me pllaka porcelani, bimësi arkitekturore dhe ndriçim të integruar për mbrëmje gjatë gjithë vitit."
-    ),
-  },
-  {
-    id: 3,
     title: L("Riverside Office Campus", "Kampus Zyrash buzë Lumit"),
     category: "commercial",
     location: "Vancouver, WA",
@@ -47,18 +35,18 @@ export const projects = [
     ),
   },
   {
-    id: 4,
-    title: L("Heritage Lawn Restoration", "Restaurim i një Lëndine Historike"),
+    id: 3,
+    title: L("Heritage Garden Restoration", "Restaurim i një Kopshti Historik"),
     category: "lawn-care",
     location: "Salem, OR",
     image: img("photo-1568605114967-8130f3a36994"),
     description: L(
-      "A century-old estate lawn brought back from drought damage with aeration, overseeding and a smart irrigation retrofit.",
-      "Lëndina njëqindvjeçare e një rezidence u rikthye nga dëmtimet e thatësirës me ajrosje, mbjellje shtesë dhe një sistem ujitjeje inteligjente."
+      "A century-old estate garden brought back from drought damage with aeration, overseeding and a smart irrigation retrofit.",
+      "Kopshti njëqindvjeçar i një rezidence u rikthye nga dëmtimet e thatësirës me ajrosje, mbjellje shtesë dhe një sistem ujitjeje inteligjente."
     ),
   },
   {
-    id: 5,
+    id: 4,
     title: L("Boutique Hotel Plantscape", "Gjelbërim Hoteli Butik"),
     category: "interior-plants",
     location: "Portland, OR",
@@ -69,7 +57,7 @@ export const projects = [
     ),
   },
   {
-    id: 6,
+    id: 5,
     title: L("Orchard Kitchen Garden", "Kopsht Perimesh me Pemëtore"),
     category: "garden-design",
     location: "Hillsboro, OR",
@@ -80,18 +68,7 @@ export const projects = [
     ),
   },
   {
-    id: 7,
-    title: L("Creekside Native Landscape", "Peizazh Vendas buzë Përroit"),
-    category: "landscaping",
-    location: "Beaverton, OR",
-    image: img("photo-1441974231531-c6227db76b6e"),
-    description: L(
-      "Erosion control and native re-planting along 300 feet of creek frontage, with a boardwalk path through the trees.",
-      "Kontroll erozioni dhe rimbjellje me bimë vendase përgjatë 90 metrave buzë përroit, me një shteg dërrase mes pemëve."
-    ),
-  },
-  {
-    id: 8,
+    id: 6,
     title: L("Tech HQ Green Offices", "Zyra të Gjelbra për një Kompani Teknologjie"),
     category: "interior-plants",
     location: "Portland, OR",
