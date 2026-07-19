@@ -1,8 +1,8 @@
 import { L } from "../utils/localize";
 
 export const companyStory = L(
-  "GreenArt Group started in 2008 with one truck, two shovels and a simple belief: every outdoor space deserves the same care an artist gives a canvas. What began as a small garden care round in Portland has grown into a full-service gardening company — but every project, from a window box to a corporate campus, still gets the founder's standard of craft.",
-  "GreenArt Group nisi në 2008 me një kamion, dy lopata dhe një bindje të thjeshtë: çdo hapësirë e jashtme meriton po atë kujdes që një artist i jep kanavacës. Ajo që filloi si një shërbim i vogël kujdesi kopshtesh në Portland është rritur në një kompani të plotë kopshtarie — por çdo projekt, nga një vazo dritareje deri te një kampus korporate, merr ende standardin e themeluesit."
+  "GreenArt Group started in 2008 with one truck, two shovels and a simple belief: every outdoor space deserves the same care an artist gives a canvas. What began as a small garden care round in Pristina has grown into a full-service gardening company — but every project, from a window box to a corporate campus, still gets the founder's standard of craft.",
+  "GreenArt Group nisi në 2008 me një kamion, dy lopata dhe një bindje të thjeshtë: çdo hapësirë e jashtme meriton po atë kujdes që një artist i jep kanavacës. Ajo që filloi si një shërbim i vogël kujdesi kopshtesh në Prishtinë është rritur në një kompani të plotë kopshtarie — por çdo projekt, nga një vazo dritareje deri te një kampus korporate, merr ende standardin e themeluesit."
 );
 
 export const mission = L(
@@ -99,8 +99,8 @@ export const timeline = [
     year: "2008",
     title: L("The First Truck", "Kamioni i Parë"),
     description: L(
-      "GreenArt Group is founded as a two-person lawn care round in Portland.",
-      "GreenArt Group themelohet si një shërbim dyvetësh kujdesi kopshtesh në Portland."
+      "GreenArt Group is founded as a two-person garden care round in Pristina.",
+      "GreenArt Group themelohet si një shërbim dyvetësh kujdesi kopshtesh në Prishtinë."
     ),
   },
   {
@@ -152,8 +152,8 @@ export const contactFaqs = [
   {
     question: L("What areas do you serve?", "Cilat zona mbuloni?"),
     answer: L(
-      "We cover the greater Portland metro area, including Lake Oswego, Beaverton, Hillsboro, Vancouver and Salem.",
-      "Mbulojmë zonën metropolitane të Portlandit, përfshirë Lake Oswego, Beaverton, Hillsboro, Vancouver dhe Salem."
+      "We cover all of Kosovo — Pristina, Prizren, Peja, Gjakova, Ferizaj, Gjilan and Mitrovica.",
+      "Mbulojmë gjithë Kosovën — Prishtinën, Prizrenin, Pejën, Gjakovën, Ferizajn, Gjilanin dhe Mitrovicën."
     ),
   },
   {

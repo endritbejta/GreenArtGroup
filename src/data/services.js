@@ -425,8 +425,8 @@ export const services = [
           "Në cilat zona dërgoni?"
         ),
         answer: L(
-          "We deliver across the greater Portland metro area. For larger orders we can arrange delivery further afield — just ask.",
-          "Dërgojmë në gjithë zonën metropolitane të Portlandit. Për porosi më të mëdha mund të organizojmë dërgesa edhe më larg — mjafton të pyesni."
+          "We deliver across all of Kosovo. For larger orders we can arrange delivery further afield — just ask.",
+          "Dërgojmë anembanë Kosovës. Për porosi më të mëdha mund të organizojmë dërgesa edhe më larg — mjafton të pyesni."
         ),
       },
       {
@@ -572,8 +572,8 @@ export const services = [
       {
         question: L("What does rental cost?", "Sa kushton qiraja?"),
         answer: L(
-          "Programs start at $149/month for a small office setup, including planters, care visits and replacements. We'll quote precisely after a free site visit.",
-          "Programet fillojnë nga 149 $ në muaj për një zyrë të vogël, përfshirë vazot, vizitat e kujdesit dhe zëvendësimet. Ju japim çmim të saktë pas një vizite falas në ambient."
+          "Programs start at €149/month for a small office setup, including planters, care visits and replacements. We'll quote precisely after a free site visit.",
+          "Programet fillojnë nga 149 € në muaj për një zyrë të vogël, përfshirë vazot, vizitat e kujdesit dhe zëvendësimet. Ju japim çmim të saktë pas një vizite falas në ambient."
         ),
       },
       {

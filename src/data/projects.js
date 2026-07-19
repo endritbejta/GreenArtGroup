@@ -16,7 +16,7 @@ export const projects = [
     id: 1,
     title: L("Hillside Family Garden", "Kopsht Familjar në Kodrinë"),
     category: "garden-design",
-    location: "Lake Oswego, OR",
+    location: L("Prizren, Kosovo", "Prizren, Kosovë"),
     image: img("photo-1466692476868-aef1dfb1e735"),
     description: L(
       "A steep, unusable slope terraced into three garden rooms with native planting, a play lawn and an outdoor dining terrace.",
@@ -27,7 +27,7 @@ export const projects = [
     id: 2,
     title: L("Riverside Office Campus", "Kampus Zyrash buzë Lumit"),
     category: "commercial",
-    location: "Vancouver, WA",
+    location: L("Pristina, Kosovo", "Prishtinë, Kosovë"),
     image: img("photo-1444392061186-9fc38f84f726"),
     description: L(
       "Streetscape trees, rain gardens and a rooftop terrace planted for pollinators across a three-building campus.",
@@ -38,7 +38,7 @@ export const projects = [
     id: 3,
     title: L("Heritage Garden Restoration", "Restaurim i një Kopshti Historik"),
     category: "lawn-care",
-    location: "Salem, OR",
+    location: L("Peja, Kosovo", "Pejë, Kosovë"),
     image: img("photo-1568605114967-8130f3a36994"),
     description: L(
       "A century-old estate garden brought back from drought damage with aeration, overseeding and a smart irrigation retrofit.",
@@ -49,7 +49,7 @@ export const projects = [
     id: 4,
     title: L("Boutique Hotel Plantscape", "Gjelbërim Hoteli Butik"),
     category: "interior-plants",
-    location: "Portland, OR",
+    location: L("Pristina, Kosovo", "Prishtinë, Kosovë"),
     image: img("photo-1470058869958-2a77ade41c02"),
     description: L(
       "Lobby green wall, statement specimen trees and guest-floor planting with a weekly care program.",
@@ -60,7 +60,7 @@ export const projects = [
     id: 5,
     title: L("Orchard Kitchen Garden", "Kopsht Perimesh me Pemëtore"),
     category: "garden-design",
-    location: "Hillsboro, OR",
+    location: L("Gjakova, Kosovo", "Gjakovë, Kosovë"),
     image: img("photo-1461354464878-ad92f492a5a0"),
     description: L(
       "Raised beds, espaliered fruit trees and a greenhouse — a productive garden designed for a family of keen cooks.",
@@ -71,7 +71,7 @@ export const projects = [
     id: 6,
     title: L("Tech HQ Green Offices", "Zyra të Gjelbra për një Kompani Teknologjie"),
     category: "interior-plants",
-    location: "Portland, OR",
+    location: L("Ferizaj, Kosovo", "Ferizaj, Kosovë"),
     image: img("photo-1485955900006-10f4d324d411"),
     description: L(
       "Two hundred rental plants across four floors, with acoustic planting dividers and a monthly rotation program.",

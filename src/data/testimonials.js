@@ -7,7 +7,7 @@ export const testimonials = [
   {
     id: 1,
     name: "Joshua Jones",
-    role: L("Homeowner, Portland", "Pronar shtëpie, Portland"),
+    role: L("Homeowner, Pristina", "Pronar shtëpie, Prishtinë"),
     rating: 5,
     avatar: avatar("photo-1500648767791-00dcc994a43e"),
     quote: L(
@@ -29,7 +29,7 @@ export const testimonials = [
   {
     id: 3,
     name: "Judith Rodriguez",
-    role: L("Homeowner, Lake Oswego", "Pronare shtëpie, Lake Oswego"),
+    role: L("Homeowner, Prizren", "Pronare shtëpie, Prizren"),
     rating: 5,
     avatar: avatar("photo-1494790108377-be9c29b29330"),
     quote: L(
@@ -62,7 +62,7 @@ export const testimonials = [
   {
     id: 6,
     name: "Emily Watson",
-    role: L("Homeowner, Beaverton", "Pronare shtëpie, Beaverton"),
+    role: L("Homeowner, Peja", "Pronare shtëpie, Pejë"),
     rating: 5,
     avatar: avatar("photo-1544005313-94ddf0286df2"),
     quote: L(

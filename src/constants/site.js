@@ -2,16 +2,16 @@ import { L } from "../utils/localize";
 
 export const SITE = {
   name: "GreenArt Group",
-  phone: "+1 (555) 234-7890",
+  phone: "+383 44 123 456",
   email: "hello@greenartgroup.com",
-  address: "789 Garden Lane, Portland, OR 97201",
-  mapQuery: "Portland, OR",
+  address: "Rr. Agim Ramadani 45, 10000 Prishtinë, Kosovë",
+  mapQuery: "Prishtina, Kosovo",
   hours: [
     {
       days: L("Monday – Friday", "E Hënë – E Premte"),
-      time: "8:00 AM – 6:00 PM",
+      time: "8:00 – 18:00",
     },
-    { days: L("Saturday", "E Shtunë"), time: "9:00 AM – 4:00 PM" },
+    { days: L("Saturday", "E Shtunë"), time: "9:00 – 16:00" },
     { days: L("Sunday", "E Diel"), time: L("Closed", "Mbyllur") },
   ],
   socials: [
