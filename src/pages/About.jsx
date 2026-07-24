@@ -111,7 +111,7 @@ export default function About() {
                     aria-hidden="true"
                     className="absolute -left-[41px] top-1 h-4 w-4 rounded-full border-4 border-primary-100 bg-primary-500"
                   />
-                  <p className="text-sm font-bold uppercase tracking-wide text-primary-600">
+                  <p className="text-sm font-bold text-primary-600">
                     {milestone.year}
                   </p>
                   <h3 className="mt-1 text-lg font-bold text-gray-900">

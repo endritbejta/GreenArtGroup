@@ -27,7 +27,7 @@ export default function AboutSection() {
             />
             <div className="absolute -bottom-6 -right-4 rounded-2xl bg-primary-500 px-6 py-4 text-white shadow-lift sm:-right-6">
               <p className="text-3xl font-extrabold">18+</p>
-              <p className="text-xs font-medium uppercase tracking-wide text-primary-100">
+              <p className="text-xs font-medium text-primary-100">
                 {t("homeAbout.yearsBadge")}
               </p>
             </div>

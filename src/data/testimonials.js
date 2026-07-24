@@ -18,7 +18,7 @@ export const testimonials = [
   {
     id: 2,
     name: "Kenneth Allen",
-    role: L("Facilities Manager", "Menaxher Objektesh"),
+    role: L("Facilities manager", "Menaxher objektesh"),
     rating: 5,
     avatar: avatar("photo-1507003211169-0a1dd7228f2d"),
     quote: L(
@@ -40,7 +40,7 @@ export const testimonials = [
   {
     id: 4,
     name: "Sarah Mitchell",
-    role: L("Restaurant Owner", "Pronare Restoranti"),
+    role: L("Restaurant owner", "Pronare restoranti"),
     rating: 5,
     avatar: avatar("photo-1438761681033-6461ffad8d80"),
     quote: L(
@@ -51,7 +51,7 @@ export const testimonials = [
   {
     id: 5,
     name: "David Chen",
-    role: L("Property Developer", "Zhvillues Pronash"),
+    role: L("Property developer", "Zhvillues pronash"),
     rating: 4,
     avatar: avatar("photo-1472099645785-5658abf4ff4e"),
     quote: L(

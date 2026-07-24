@@ -5,16 +5,16 @@ const img = (id, w = 900) =>
 
 /** Stable category keys with localized labels, used for filtering. */
 export const categoryLabels = {
-  "garden-design": L("Garden Design", "Dizajn Kopshti"),
+  "garden-design": L("Garden design", "Dizajn kopshti"),
   commercial: L("Commercial", "Komerciale"),
-  "lawn-care": L("Lawn Care", "Kujdes Kopshti"),
-  "interior-plants": L("Interior Plants", "Bimë të Brendshme"),
+  "lawn-care": L("Lawn care", "Mirëmbajtje kopshti"),
+  "interior-plants": L("Interior plants", "Bimë të brendshme"),
 };
 
 export const projects = [
   {
     id: 1,
-    title: L("Hillside Family Garden", "Kopsht Familjar në Kodrinë"),
+    title: L("Hillside family garden", "Kopsht familjar në kodrinë"),
     category: "garden-design",
     location: L("Prizren, Kosovo", "Prizren, Kosovë"),
     image: img("photo-1466692476868-aef1dfb1e735"),
@@ -25,7 +25,7 @@ export const projects = [
   },
   {
     id: 2,
-    title: L("Riverside Office Campus", "Kampus Zyrash buzë Lumit"),
+    title: L("Riverside office campus", "Kampus zyrash buzë lumit"),
     category: "commercial",
     location: L("Pristina, Kosovo", "Prishtinë, Kosovë"),
     image: img("photo-1444392061186-9fc38f84f726"),
@@ -36,7 +36,7 @@ export const projects = [
   },
   {
     id: 3,
-    title: L("Heritage Garden Restoration", "Restaurim i një Kopshti Historik"),
+    title: L("Heritage garden restoration", "Restaurim i një kopshti historik"),
     category: "lawn-care",
     location: L("Peja, Kosovo", "Pejë, Kosovë"),
     image: img("photo-1568605114967-8130f3a36994"),
@@ -47,7 +47,7 @@ export const projects = [
   },
   {
     id: 4,
-    title: L("Boutique Hotel Plantscape", "Gjelbërim Hoteli Butik"),
+    title: L("Boutique hotel plantscape", "Gjelbërim hoteli butik"),
     category: "interior-plants",
     location: L("Pristina, Kosovo", "Prishtinë, Kosovë"),
     image: img("photo-1470058869958-2a77ade41c02"),
@@ -58,7 +58,7 @@ export const projects = [
   },
   {
     id: 5,
-    title: L("Orchard Kitchen Garden", "Kopsht Perimesh me Pemëtore"),
+    title: L("Orchard kitchen garden", "Kopsht perimesh me pemëtore"),
     category: "garden-design",
     location: L("Gjakova, Kosovo", "Gjakovë, Kosovë"),
     image: img("photo-1461354464878-ad92f492a5a0"),
@@ -69,7 +69,7 @@ export const projects = [
   },
   {
     id: 6,
-    title: L("Tech HQ Green Offices", "Zyra të Gjelbra për një Kompani Teknologjie"),
+    title: L("Tech HQ green offices", "Zyra të gjelbra për kompani teknologjie"),
     category: "interior-plants",
     location: L("Ferizaj, Kosovo", "Ferizaj, Kosovë"),
     image: img("photo-1485955900006-10f4d324d411"),

@@ -21,7 +21,7 @@ export default function Newsletter() {
 
   return (
     <div>
-      <h3 className="text-sm font-bold uppercase tracking-wide text-white">
+      <h3 className="text-sm font-bold text-white">
         {t("newsletter.title")}
       </h3>
       <p className="mt-3 text-sm text-primary-100/80">{t("newsletter.text")}</p>

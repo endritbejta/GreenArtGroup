@@ -7,38 +7,38 @@ export const services = [
   {
     id: 1,
     slug: "lawn-care",
-    title: L("Lawn Care", "Kujdesi për Kopshtin"),
+    title: L("Lawn care", "Mirëmbajtje kopshti"),
     icon: "sprout",
     featured: true,
     image: img("photo-1568605114967-8130f3a36994"),
     shortDescription: L(
       "Mowing, fertilizing, aeration and seasonal treatments that keep your lawn thick, healthy and deep green all year.",
-      "Kositje, plehërim, ajrosje dhe trajtime sezonale që e mbajnë kopshtin tuaj të dendur, të shëndetshëm dhe të gjelbër gjatë gjithë vitit."
+      "Kositje, plehërim, ajrosje dhe trajtime sezonale që e mbajnë barin të dendur, të shëndetshëm dhe të gjelbër gjatë gjithë vitit."
     ),
     description: L(
       "A great lawn doesn't happen by accident. Our lawn care programs combine precision mowing, soil-tested fertilization, aeration, overseeding and weed control into a schedule tailored to your grass type and local climate. Whether you need a weekly maintenance visit or a full lawn renovation, our certified technicians treat your turf like their own.",
-      "Një kopsht i bukur nuk krijohet rastësisht. Programet tona të kujdesit kombinojnë kositjen e saktë, plehërimin e bazuar në analizën e tokës, ajrosjen, mbjelljen shtesë dhe kontrollin e barërave të këqija në një plan të përshtatur për llojin e barit dhe klimën tuaj lokale. Qoftë për një vizitë javore mirëmbajtjeje apo për një rinovim të plotë të kopshtit, teknikët tanë të certifikuar kujdesen për barin tuaj si për të tyren."
+      "Një kopsht i rregullt nuk mbahet rastësisht. Programet tona përfshijnë kositje të saktë, plehërim sipas gjendjes së tokës, ajrosje, rimbjellje dhe kontroll të barërave të këqija. Pavarësisht nëse ju duhet mirëmbajtje javore apo rikthim i plotë i barit, ekipi ynë punon me plan të qartë dhe kujdes të vazhdueshëm."
     ),
     benefits: [
       L(
         "Custom fertilization plans based on soil analysis",
-        "Plane plehërimi të personalizuara sipas analizës së tokës"
+        "Plan plehërimi sipas gjendjes së tokës"
       ),
       L(
         "Weekly or bi-weekly mowing schedules",
-        "Orare kositjeje javore ose çdo dy javë"
+        "Kositje javore ose çdo dy javë"
       ),
       L(
         "Aeration and overseeding for dense, resilient turf",
-        "Ajrosje dhe mbjellje shtesë për një bar të dendur e të qëndrueshëm"
+        "Ajrosje dhe rimbjellje për bar më të dendur"
       ),
       L(
         "Safe, targeted weed and pest control",
-        "Kontroll i sigurt dhe i synuar i barërave të këqija dhe dëmtuesve"
+        "Kontroll i kujdesshëm i barërave të këqija dhe dëmtuesve"
       ),
       L(
         "Seasonal cleanups included in annual plans",
-        "Pastrime sezonale të përfshira në planet vjetore"
+        "Pastrime sezonale brenda planeve vjetore"
       ),
     ],
     gallery: [
@@ -54,7 +54,7 @@ export const services = [
         ),
         answer: L(
           "During the growing season, most lawns benefit from weekly mowing. In slower months we switch to bi-weekly visits so the grass is never cut too short.",
-          "Gjatë sezonit të rritjes, shumica e kopshteve përfitojnë nga kositja javore. Në muajt më të ngadaltë kalojmë në vizita çdo dy javë, që bari të mos pritet kurrë shumë shkurt."
+          "Gjatë sezonit të rritjes, shumica e kopshteve kanë nevojë për kositje javore. Në muajt më të qetë kalojmë në vizita çdo dy javë, që bari të mos pritet më shumë se duhet."
         ),
       },
       {
@@ -64,7 +64,7 @@ export const services = [
         ),
         answer: L(
           "Yes. We use targeted, low-impact products and always let you know the short re-entry window after each application.",
-          "Po. Përdorim produkte të synuara me ndikim të ulët dhe ju njoftojmë gjithmonë për periudhën e shkurtër të pritjes pas çdo aplikimi."
+          "Po. Përdorim produkte me ndikim të ulët dhe ju njoftojmë gjithmonë sa kohë duhet të prisni pas çdo trajtimi."
         ),
       },
       {
@@ -74,7 +74,7 @@ export const services = [
         ),
         answer: L(
           "In most cases, yes. We start with a soil test, then build a renovation plan combining aeration, overseeding and fertilization. Full recovery usually takes one to two seasons.",
-          "Në shumicën e rasteve, po. Fillojmë me një analizë të tokës, pastaj ndërtojmë një plan rinovimi që kombinon ajrosjen, mbjelljen shtesë dhe plehërimin. Rikuperimi i plotë zakonisht zgjat një deri në dy sezone."
+          "Në shumicën e rasteve, po. Fillojmë me kontroll të tokës dhe më pas përgatisim plan rinovimi me ajrosje, rimbjellje dhe plehërim. Rikuperimi i plotë zakonisht zgjat një deri në dy sezone."
         ),
       },
     ],
@@ -82,17 +82,17 @@ export const services = [
   {
     id: 2,
     slug: "garden-design",
-    title: L("Garden Design", "Dizajn Kopshti"),
+    title: L("Garden design", "Dizajn kopshti"),
     icon: "flower",
     featured: true,
     image: img("photo-1466692476868-aef1dfb1e735"),
     shortDescription: L(
       "Bespoke garden concepts — from planting plans to complete outdoor rooms designed around how you live.",
-      "Koncepte kopshtesh të personalizuara — nga planet e mbjelljes deri te hapësira të plota të jashtme, të dizajnuara sipas mënyrës si jetoni."
+      "Koncepte të personalizuara për kopshtin tuaj, nga plani i mbjelljes deri te hapësira të plota të jashtme që përshtaten me mënyrën si jetoni."
     ),
     description: L(
       "Our designers turn underused outdoor space into gardens you'll actually live in. We begin with a site visit and a conversation about how you want the space to feel, then develop planting plans, hardscape layouts and lighting concepts. You receive clear visuals before a single spade hits the ground, and our crews build exactly what was agreed.",
-      "Dizajnerët tanë e kthejnë hapësirën e papërdorur të jashtme në kopshte ku do të doni të jetoni vërtet. Fillojmë me një vizitë në terren dhe një bisedë se si dëshironi ta ndieni hapësirën, pastaj zhvillojmë planet e mbjelljes, strukturat dhe konceptet e ndriçimit. Ju merrni vizualizime të qarta para se të fillojë puna, dhe ekipet tona ndërtojnë pikërisht atë që është rënë dakord."
+      "Dizajnerët tanë i kthejnë hapësirat e papërdorura në kopshte ku dëshironi të kaloni kohë. Fillojmë me vizitë në terren dhe bisedë për atmosferën që doni të krijoni, pastaj përgatisim planin e mbjelljes, strukturat, rrugicat dhe ndriçimin. Para nisjes së punës merrni pamje të qarta të projektit, ndërsa ekipi ynë realizon atë që është dakorduar."
     ),
     benefits: [
       L(
@@ -101,15 +101,15 @@ export const services = [
       ),
       L(
         "Detailed planting and layout plans with visuals",
-        "Plane të detajuara mbjelljeje dhe organizimi me vizualizime"
+        "Plane të detajuara mbjelljeje dhe organizimi"
       ),
       L(
         "Plant selection matched to soil, light and maintenance appetite",
-        "Zgjedhje bimësh sipas tokës, dritës dhe kohës që keni për mirëmbajtje"
+        "Zgjedhje bimësh sipas tokës, dritës dhe kohës që keni për kujdes"
       ),
       L(
         "Seamless handover to our own build crews",
-        "Kalim i qetë te ekipet tona të ndërtimit"
+        "Kalimi nga dizajni te realizimi bëhet nga i njëjti ekip"
       ),
       L(
         "Aftercare guidance for the first growing season",
@@ -129,7 +129,7 @@ export const services = [
         ),
         answer: L(
           "A typical residential design takes two to four weeks from site visit to final plan, depending on the size and complexity of the space.",
-          "Një dizajn tipik rezidencial zgjat dy deri në katër javë nga vizita në terren deri te plani përfundimtar, në varësi të madhësisë dhe kompleksitetit të hapësirës."
+          "Një projekt dizajni për shtëpi zakonisht zgjat dy deri në katër javë, nga vizita në terren deri te plani final. Koha varet nga madhësia dhe kompleksiteti i hapësirës."
         ),
       },
       {
@@ -139,7 +139,7 @@ export const services = [
         ),
         answer: L(
           "Absolutely. Many of our projects are redesigns that keep mature trees and the best existing features while rethinking the rest.",
-          "Absolutisht. Shumë nga projektet tona janë ridizajnime që ruajnë pemët e vjetra dhe elementet më të mira ekzistuese, duke rimenduar pjesën tjetër."
+          "Po. Shumë projekte janë ridizajnime ku ruajmë pemët e rritura dhe elementet më të mira ekzistuese, ndërsa pjesën tjetër e organizojmë më mirë."
         ),
       },
       {
@@ -149,7 +149,7 @@ export const services = [
         ),
         answer: L(
           "Yes — design and build under one roof is our specialty. It keeps budgets honest and the finished garden true to the plan.",
-          "Po — dizajni dhe ndërtimi nën një çati është specialiteti ynë. Kjo i mban buxhetet të sakta dhe kopshtin përfundimtar besnik ndaj planit."
+          "Po. Dizajni dhe realizimi nga i njëjti ekip është një nga përparësitë tona. Kjo e mban buxhetin të qartë dhe rezultatin besnik ndaj planit."
         ),
       },
     ],
@@ -157,22 +157,22 @@ export const services = [
   {
     id: 4,
     slug: "tree-care",
-    title: L("Tree Care", "Kujdesi për Pemët"),
+    title: L("Tree care", "Kujdes për pemët"),
     icon: "scissors",
     featured: false,
     image: img("photo-1502082553048-f009c37129b9"),
     shortDescription: L(
       "Certified arborists for pruning, health assessments, cabling and safe removals.",
-      "Arboristë të certifikuar për krasitje, vlerësime shëndetësore, përforcime dhe heqje të sigurta."
+      "Krasitje, kontroll shëndeti, përforcim dhe heqje e sigurt e pemëve kur është e nevojshme."
     ),
     description: L(
       "Trees are the most valuable living assets on your property — and the most dangerous to work on without training. Our certified arborists prune for health and shape, diagnose disease, install support systems for mature specimens and carry out safe, insured removals when there is no alternative.",
-      "Pemët janë pasuria më e vlefshme e gjallë e pronës suaj — dhe më e rrezikshmja për t'u punuar pa trajnim. Arboristët tanë të certifikuar krasitin për shëndet dhe formë, diagnostikojnë sëmundjet, instalojnë sisteme mbështetëse për pemët e vjetra dhe kryejnë heqje të sigurta e të siguruara kur nuk ka alternativë tjetër."
+      "Pemët janë ndër pjesët më të vlefshme të një prone, por kërkojnë punë të kujdesshme. Ne bëjmë krasitje për shëndet dhe formë, kontrollojmë sëmundjet, vendosim mbështetje për pemë të vjetra dhe kryejmë heqje të sigurta vetëm kur nuk ka zgjidhje tjetër."
     ),
     benefits: [
       L(
         "ISA-certified arborists on every job",
-        "Arboristë të certifikuar ISA në çdo punë"
+        "Specialistë të përgatitur për punë me pemë"
       ),
       L(
         "Structural pruning that protects long-term health",
@@ -184,11 +184,11 @@ export const services = [
       ),
       L(
         "Cabling and bracing for veteran trees",
-        "Kabllim dhe përforcim për pemët e moçme"
+        "Mbështetje dhe përforcim për pemët e vjetra"
       ),
       L(
         "Fully insured removals and stump grinding",
-        "Heqje plotësisht të siguruara dhe bluarje trungjesh"
+        "Heqje e sigurt dhe bluarje trungjesh"
       ),
     ],
     gallery: [
@@ -204,7 +204,7 @@ export const services = [
         ),
         answer: L(
           "Most species respond best to late-winter pruning, before the spring flush. Some flowering trees are pruned right after blooming — we'll advise per tree.",
-          "Shumica e llojeve reagojnë më mirë ndaj krasitjes në fund të dimrit, para lulëzimit pranveror. Disa pemë të lulëzuara krasiten menjëherë pas lulëzimit — ju këshillojmë për secilën pemë."
+          "Shumica e pemëve krasiten më mirë në fund të dimrit, para rritjes pranverore. Disa lloje që lulëzojnë krasiten menjëherë pas lulëzimit. Ne ju këshillojmë sipas rastit."
         ),
       },
       {
@@ -214,7 +214,7 @@ export const services = [
         ),
         answer: L(
           "Often, yes — early diagnosis matters. An arborist visit includes a full health assessment and a written treatment recommendation.",
-          "Shpesh, po — diagnoza e hershme ka rëndësi. Vizita e arboristit përfshin një vlerësim të plotë shëndetësor dhe një rekomandim me shkrim për trajtimin."
+          "Shpesh, po. Sa më herët të kontrollohet, aq më mirë. Vizita përfshin vlerësim të gjendjes dhe rekomandim me shkrim për trajtim."
         ),
       },
       {
@@ -224,7 +224,7 @@ export const services = [
         ),
         answer: L(
           "Fully. We carry comprehensive liability coverage and follow strict rigging protocols on every removal.",
-          "Plotësisht. Kemi mbulim të plotë përgjegjësie dhe ndjekim protokolle strikte sigurie në çdo heqje."
+          "Po. Heqjet bëhen me pajisje të përshtatshme, plan sigurie dhe kujdes për pronën përreth."
         ),
       },
     ],
@@ -232,38 +232,38 @@ export const services = [
   {
     id: 5,
     slug: "irrigation",
-    title: L("Irrigation Systems", "Sisteme Ujitjeje"),
+    title: L("Irrigation systems", "Sisteme ujitjeje"),
     icon: "droplets",
     featured: false,
     image: img("photo-1416879595882-3373a0480b5b"),
     shortDescription: L(
       "Smart irrigation design, installation and servicing that saves water and keeps plants thriving.",
-      "Dizajn, instalim dhe servisim i ujitjes inteligjente që kursen ujë dhe i mban bimët të lulëzuara."
+      "Dizajn, instalim dhe servis i ujitjes inteligjente që kursen ujë dhe i mban bimët në gjendje të mirë."
     ),
     description: L(
       "Hand-watering is the first thing busy garden owners give up on. We design and install smart irrigation — drip lines, pop-up sprinklers and weather-aware controllers — so every bed and lawn zone gets exactly the water it needs. We also service and winterize existing systems of any brand.",
-      "Ujitja me dorë është gjëja e parë që braktisin pronarët e zënë të kopshteve. Ne dizajnojmë dhe instalojmë ujitje inteligjente — linja pikuese, spërkatës dhe kontrollues që ndjekin motin — që çdo lehe dhe zonë kopshti të marrë saktësisht ujin që i duhet. Servisojmë dhe dimërojmë edhe sisteme ekzistuese të çdo marke."
+      "Kur dita është e ngarkuar, ujitja me dorë shpesh mbetet pas. Ne projektojmë dhe instalojmë sisteme inteligjente me pika, spërkatës dhe kontrollues sipas motit, që çdo zonë të marrë sasinë e duhur të ujit. Servisojmë dhe përgatisim për dimër edhe sisteme ekzistuese."
     ),
     benefits: [
       L(
         "Zone-by-zone design for lawns, beds and pots",
-        "Dizajn zonë-për-zonë për kopshte, lehe dhe vazo"
+        "Dizajn sipas zonave për bar, lehe dhe vazo"
       ),
       L(
         "Smart controllers that adjust to the weather",
-        "Kontrollues inteligjentë që përshtaten me motin"
+        "Kontrollues inteligjentë që përshtatin ujitjen me motin"
       ),
       L(
         "Water savings of up to 40% versus manual watering",
-        "Kursim uji deri në 40% krahasuar me ujitjen manuale"
+        "Kursim uji deri në 40% krahasuar me ujitjen me dorë"
       ),
       L(
         "Servicing and repairs for all major brands",
-        "Servisim dhe riparime për të gjitha markat kryesore"
+        "Servis dhe riparime për markat kryesore"
       ),
       L(
         "Seasonal start-up and winterization plans",
-        "Plane sezonale ndezjeje dhe dimërimi"
+        "Nisje pranverore dhe përgatitje për dimër"
       ),
     ],
     gallery: [
@@ -279,7 +279,7 @@ export const services = [
         ),
         answer: L(
           "Usually the opposite. Smart zoning and weather-based controllers typically cut outdoor water use by 30–40% compared to hose watering.",
-          "Zakonisht e kundërta. Zonimi inteligjent dhe kontrolluesit e bazuar në mot zakonisht e ulin përdorimin e ujit të jashtëm me 30–40% krahasuar me ujitjen me zorrë."
+          "Zakonisht ndodh e kundërta. Zonimi dhe kontrolluesit sipas motit mund ta ulin përdorimin e ujit për 30-40% krahasuar me ujitjen me zorrë."
         ),
       },
       {
@@ -289,7 +289,7 @@ export const services = [
         ),
         answer: L(
           "Yes. Drip systems in particular can be retrofitted into mature beds with minimal disturbance.",
-          "Po. Sistemet pikuese në veçanti mund të instalohen në lehe të rritura me shqetësim minimal."
+          "Po. Sidomos sistemet me pika mund të vendosen në lehe të formuara pa dëmtuar shumë hapësirën ekzistuese."
         ),
       },
       {
@@ -299,7 +299,7 @@ export const services = [
         ),
         answer: L(
           "We recommend a spring start-up check and an autumn winterization to protect pipes from frost — both are covered by our care plans.",
-          "Rekomandojmë një kontroll ndezjeje në pranverë dhe një dimërim në vjeshtë për t'i mbrojtur tubat nga ngrica — të dyja mbulohen nga planet tona të kujdesit."
+          "Rekomandojmë kontroll në pranverë dhe përgatitje në vjeshtë për t'i mbrojtur tubat nga ngrica. Të dyja mund të përfshihen në planet tona të kujdesit."
         ),
       },
     ],
@@ -307,38 +307,38 @@ export const services = [
   {
     id: 6,
     slug: "interior-plants",
-    title: L("Interior Plants", "Bimë të Brendshme"),
+    title: L("Interior plants", "Bimë të brendshme"),
     icon: "leaf",
     featured: true,
     image: img("photo-1470058869958-2a77ade41c02"),
     shortDescription: L(
       "Interior planting design and care that turns homes and workplaces into green sanctuaries.",
-      "Dizajn dhe kujdes për bimët e brendshme që i kthen shtëpitë dhe vendet e punës në oaze të gjelbra."
+      "Dizajn dhe kujdes për bimë të brendshme që u japin më shumë jetë shtëpive, zyrave dhe lokaleve."
     ),
     description: L(
       "Bring the outside in. We design interior plantscapes for homes, offices and hospitality spaces — selecting species that thrive in your light conditions, styling them in planters that suit the interior, and offering ongoing care visits so everything stays lush without you lifting a finger.",
-      "Sillni natyrën brenda. Ne dizajnojmë hapësira të gjelbra të brendshme për shtëpi, zyra dhe ambiente mikpritjeje — duke zgjedhur lloje që lulëzojnë në kushtet tuaja të dritës, duke i stiluar në vazo që i shkojnë interierit dhe duke ofruar vizita të rregullta kujdesi, që gjithçka të mbetet e harlisur pa lëvizur ju gishtin."
+      "Ne krijojmë gjelbërim të brendshëm për shtëpi, zyra, hotele dhe lokale. Zgjedhim bimë që përshtaten me dritën dhe temperaturën e ambientit, i vendosim në vazo që shkojnë me interierin dhe ofrojmë vizita kujdesi që bimët të duken mirë pa u bërë barrë për ju."
     ),
     benefits: [
       L(
         "Light-level assessment before any plant is chosen",
-        "Vlerësim i nivelit të dritës para se të zgjidhet ndonjë bimë"
+        "Vlerësim i dritës para zgjedhjes së bimëve"
       ),
       L(
         "Designer planters and styling included",
-        "Vazo dizajnerësh dhe stilim të përfshira"
+        "Vazo dhe stilim të përshtatura me ambientin"
       ),
       L(
         "Ongoing care visits with plant replacement guarantee",
-        "Vizita të vazhdueshme kujdesi me garanci zëvendësimi të bimëve"
+        "Vizita të rregullta kujdesi dhe zëvendësim kur nevojitet"
       ),
       L(
         "Air-purifying, low-allergen species available",
-        "Lloje që pastrojnë ajrin dhe me alergji të ulët"
+        "Lloje që pastrojnë ajrin dhe janë më miqësore për alergjitë"
       ),
       L(
         "Installations from a single statement plant to full green walls",
-        "Instalime nga një bimë e vetme deklarative deri te mure të plota të gjelbra"
+        "Nga një bimë dekorative te mure të plota të gjelbra"
       ),
     ],
     gallery: [
@@ -351,7 +351,7 @@ export const services = [
         question: L("What if a plant dies?", "Po nëse një bimë thahet?"),
         answer: L(
           "On our care plans, plants are guaranteed — if one declines despite our visits, we replace it at no cost.",
-          "Në planet tona të kujdesit, bimët janë të garantuara — nëse njëra bie ndonëse vizitohet nga ne, e zëvendësojmë pa pagesë."
+          "Në planet tona të kujdesit, nëse një bimë dobësohet pavarësisht mirëmbajtjes sonë, e zëvendësojmë pa pagesë shtesë."
         ),
       },
       {
@@ -361,7 +361,7 @@ export const services = [
         ),
         answer: L(
           "Plenty. There is a surprising range of low-light species, and we can supplement with discreet grow lighting where needed.",
-          "Plot. Ekziston një gamë befasuese llojesh për dritë të ulët, dhe mund të shtojmë ndriçim diskret rritjeje aty ku duhet."
+          "Po. Ka shumë lloje që përshtaten me dritë të ulët, dhe aty ku duhet mund të shtojmë ndriçim diskret për rritje."
         ),
       },
       {
@@ -371,7 +371,7 @@ export const services = [
         ),
         answer: L(
           "Most interiors do well with a visit every one to two weeks, covering watering, feeding, pruning and pest checks.",
-          "Shumica e ambienteve të brendshme ecin mirë me një vizitë çdo një deri në dy javë, që përfshin ujitjen, ushqyerjen, krasitjen dhe kontrollet për dëmtues."
+          "Shumica e ambienteve kanë nevojë për vizitë çdo një deri në dy javë. Vizita përfshin ujitje, ushqim, krasitje të lehtë dhe kontroll për dëmtues."
         ),
       },
     ],
@@ -379,38 +379,38 @@ export const services = [
   {
     id: 7,
     slug: "plant-delivery",
-    title: L("Plant Delivery", "Dërgesa Bimësh"),
+    title: L("Plant delivery", "Dërgesë bimësh"),
     icon: "truck",
     featured: false,
     image: img("photo-1509423350716-97f9360b4e09"),
     shortDescription: L(
       "Healthy, nursery-fresh plants hand-delivered and placed exactly where you want them.",
-      "Bimë të shëndetshme e të freskëta nga fidanishtja, të dorëzuara dhe të vendosura pikërisht aty ku i doni."
+      "Bimë të shëndetshme nga fidanishtja, të dorëzuara me kujdes dhe të vendosura aty ku ju duhen."
     ),
     description: L(
       "Skip the trunk full of soil. Choose from our nursery's range of indoor and outdoor plants and we'll deliver them healthy, inspected and ready to thrive — with optional placement and potting on arrival. Perfect for gifts, new homes and instant garden refreshes.",
-      "Harrojeni bagazhin plot dhé. Zgjidhni nga gama e fidanishtes sonë të bimëve të brendshme dhe të jashtme dhe ne do t'i dorëzojmë të shëndetshme, të kontrolluara dhe gati për të lulëzuar — me shërbim opsional vendosjeje dhe mbjelljeje në vazo në mbërritje. Perfekte për dhurata, shtëpi të reja dhe rifreskime të menjëhershme kopshti."
+      "Zgjidhni bimët nga fidanishtja jonë dhe ne i sjellim të kontrolluara, të shëndetshme dhe gati për mbjellje. Mund të përfshijmë edhe vendosjen apo mbjelljen në vazo. Shërbim praktik për dhurata, shtëpi të reja, zyra dhe rifreskim të shpejtë të kopshtit."
     ),
     benefits: [
       L(
         "Every plant inspected and hardened off before delivery",
-        "Çdo bimë kontrollohet dhe përgatitet para dërgesës"
+        "Çdo bimë kontrollohet para nisjes"
       ),
       L(
         "Careful transport — no crushed leaves or snapped stems",
-        "Transport i kujdesshëm — pa gjethe të shtypura a kërcell të thyer"
+        "Transport i kujdesshëm, pa dëmtuar gjethet apo kërcellin"
       ),
       L(
         "Optional potting and placement service on arrival",
-        "Shërbim opsional mbjelljeje dhe vendosjeje në mbërritje"
+        "Mbjellje dhe vendosje opsionale në destinacion"
       ),
       L(
         "Gift wrapping and personal notes available",
-        "Paketim dhurate dhe shënime personale në dispozicion"
+        "Paketim dhurate dhe shënim personal sipas kërkesës"
       ),
       L(
         "Freshness guarantee on every delivery",
-        "Garanci freskie për çdo dërgesë"
+        "Garanci për gjendjen e bimës në dorëzim"
       ),
     ],
     gallery: [
@@ -426,7 +426,7 @@ export const services = [
         ),
         answer: L(
           "We deliver across all of Kosovo. For larger orders we can arrange delivery further afield — just ask.",
-          "Dërgojmë anembanë Kosovës. Për porosi më të mëdha mund të organizojmë dërgesa edhe më larg — mjafton të pyesni."
+          "Dërgojmë në gjithë Kosovën. Për porosi më të mëdha mund të organizojmë edhe dërgesa jashtë zonave të zakonshme."
         ),
       },
       {
@@ -436,7 +436,7 @@ export const services = [
         ),
         answer: L(
           "Yes — add gift wrapping and a handwritten note at checkout, and we'll deliver on the date you choose.",
-          "Po — shtoni paketimin e dhuratës dhe një shënim të shkruar me dorë në porosi, dhe ne dorëzojmë në datën që zgjidhni."
+          "Po. Mund të shtoni paketim dhurate dhe shënim personal, ndërsa ne e dorëzojmë në datën që zgjidhni."
         ),
       },
       {
@@ -446,7 +446,7 @@ export const services = [
         ),
         answer: L(
           "Our freshness guarantee covers every delivery. Send us a photo within 48 hours and we'll replace the plant free of charge.",
-          "Garancia jonë e freskisë mbulon çdo dërgesë. Na dërgoni një foto brenda 48 orësh dhe e zëvendësojmë bimën falas."
+          "Nëse bima mbërrin e dëmtuar, na dërgoni një foto brenda 48 orësh dhe e zëvendësojmë pa pagesë."
         ),
       },
     ],
@@ -454,38 +454,38 @@ export const services = [
   {
     id: 8,
     slug: "commercial-plants",
-    title: L("Commercial Plants", "Gjelbërim Komercial"),
+    title: L("Commercial plants", "Gjelbërim për biznese"),
     icon: "building",
     featured: false,
     image: img("photo-1444392061186-9fc38f84f726"),
     shortDescription: L(
       "Large-scale planting for developments, retail spaces and public realm projects.",
-      "Mbjellje në shkallë të gjerë për komplekse, hapësira tregtare dhe projekte publike."
+      "Gjelbërim në shkallë më të madhe për komplekse, zyra, lokale, hapësira tregtare dhe projekte publike."
     ),
     description: L(
       "We partner with developers, architects and facility managers to deliver planting at commercial scale — from streetscape trees and rooftop gardens to lobby plantscapes and seasonal displays. Our teams handle specification, supply, installation and long-term maintenance contracts.",
-      "Bashkëpunojmë me zhvillues, arkitektë dhe menaxherë objektesh për të realizuar gjelbërim në shkallë komerciale — nga pemët e rrugëve dhe kopshtet në tarraca deri te hapësirat e gjelbra në hyrje dhe dekoret sezonale. Ekipet tona merren me specifikimin, furnizimin, instalimin dhe kontratat afatgjata të mirëmbajtjes."
+      "Bashkëpunojmë me zhvillues, arkitektë dhe menaxherë objektesh për të realizuar gjelbërim në ambiente biznesi. Nga pemët dhe tarracat e gjelbra te hyrjet, hollet dhe dekorimet sezonale, ne merremi me specifikim, furnizim, instalim dhe mirëmbajtje afatgjatë."
     ),
     benefits: [
       L(
         "Specification support for architects and designers",
-        "Mbështetje specifikimi për arkitektë dhe dizajnerë"
+        "Mbështetje për arkitektë dhe dizajnerë gjatë specifikimit"
       ),
       L(
         "Trade supply of trees, shrubs and perennials at scale",
-        "Furnizim me pemë, shkurre dhe bimë shumëvjeçare në sasi të mëdha"
+        "Furnizim me pemë, shkurre dhe bimë në sasi të mëdha"
       ),
       L(
         "Rooftop, courtyard and public realm expertise",
-        "Ekspertizë për tarraca, oborre dhe hapësira publike"
+        "Zgjidhje për tarraca, oborre dhe hapësira publike"
       ),
       L(
         "Seasonal display programs for retail environments",
-        "Programe dekorimesh sezonale për ambiente tregtare"
+        "Dekorime sezonale për ambiente tregtare"
       ),
       L(
         "Long-term maintenance contracts with SLAs",
-        "Kontrata mirëmbajtjeje afatgjata me nivele shërbimi"
+        "Kontrata mirëmbajtjeje afatgjata me nivel të qartë shërbimi"
       ),
     ],
     gallery: [
@@ -501,7 +501,7 @@ export const services = [
         ),
         answer: L(
           "Yes — we regularly price and install from BIM and CAD planting plans, and can suggest value-engineered alternatives where supply is tight.",
-          "Po — rregullisht çmojmë dhe instalojmë nga plane mbjelljeje BIM dhe CAD, dhe mund të sugjerojmë alternativa më ekonomike kur furnizimi është i kufizuar."
+          "Po. Punojmë me plane BIM dhe CAD, bëjmë çmimin dhe instalimin, si dhe sugjerojmë alternativa më ekonomike kur furnizimi është i kufizuar."
         ),
       },
       {
@@ -511,7 +511,7 @@ export const services = [
         ),
         answer: L(
           "That's our preferred model. Maintenance contracts include defined service levels, reporting and plant replacement.",
-          "Ky është modeli ynë i preferuar. Kontratat e mirëmbajtjes përfshijnë nivele të përcaktuara shërbimi, raportim dhe zëvendësim bimësh."
+          "Po, dhe zakonisht këtë e rekomandojmë. Kontratat e mirëmbajtjes përfshijnë nivel të qartë shërbimi, raportim dhe zëvendësim bimësh kur nevojitet."
         ),
       },
       {
@@ -521,7 +521,7 @@ export const services = [
         ),
         answer: L(
           "From a single lobby installation to multi-phase developments. Our largest planting contract to date covered 4.5 acres of mixed-use public realm.",
-          "Nga një instalim i vetëm në hyrje deri te zhvillime shumëfazëshe. Kontrata jonë më e madhe e gjelbërimit deri tani mbuloi 1.8 hektarë hapësirë publike me përdorim të përzier."
+          "Nga një instalim i vogël në hyrje deri te projekte me disa faza. E vlerësojmë çdo kërkesë sipas hapësirës, afatit dhe kapacitetit të nevojshëm."
         ),
       },
     ],
@@ -529,38 +529,38 @@ export const services = [
   {
     id: 9,
     slug: "office-plant-rental",
-    title: L("Office Plant Rental", "Qira Bimësh për Zyra"),
+    title: L("Office plant rental", "Qira bimësh për zyra"),
     icon: "briefcase",
     featured: false,
     image: img("photo-1485955900006-10f4d324d411"),
     shortDescription: L(
       "Rotating rental plants for offices — always fresh, always cared for, never your problem.",
-      "Bimë me qira për zyra — gjithmonë të freskëta, gjithmonë të mirëmbajtura, kurrë problemi juaj."
+      "Bimë me qira për zyra, gjithmonë të freskëta, të mirëmbajtura dhe pa angazhim shtesë për ekipin tuaj."
     ),
     description: L(
       "Get all the benefits of a green office with none of the responsibility. Our rental program supplies premium plants in designer planters, visits regularly to keep them thriving, and rotates in fresh specimens so your space always looks its best. One simple monthly fee covers everything.",
-      "Përfitoni të gjitha të mirat e një zyre të gjelbër pa asnjë përgjegjësi. Programi ynë i qirasë ofron bimë premium në vazo dizajnerësh, i viziton rregullisht që të mbeten të harlisura dhe i rrotullon me ekzemplarë të freskët, që hapësira juaj të duket gjithmonë në formën më të mirë. Një tarifë e thjeshtë mujore mbulon gjithçka."
+      "Krijoni një zyrë më të gjelbër pa u marrë vetë me kujdesin e bimëve. Programi ynë përfshin bimë cilësore, vazo të përshtatura me ambientin, vizita të rregullta mirëmbajtjeje dhe zëvendësim kur është e nevojshme. Një pagesë mujore mbulon të gjithë shërbimin."
     ),
     benefits: [
       L(
         "No upfront investment — one monthly fee covers it all",
-        "Pa investim fillestar — një tarifë mujore mbulon gjithçka"
+        "Pa investim fillestar, me pagesë të thjeshtë mujore"
       ),
       L(
         "Regular care visits by our horticulturists",
-        "Vizita të rregullta kujdesi nga hortikulturistët tanë"
+        "Vizita të rregullta kujdesi nga ekipi ynë"
       ),
       L(
         "Free rotation and replacement of tired plants",
-        "Rrotullim dhe zëvendësim falas i bimëve të lodhura"
+        "Rrotullim dhe zëvendësim i bimëve kur humbin freskinë"
       ),
       L(
         "Designer planters matched to your interior",
-        "Vazo dizajnerësh të përshtatura me interierin tuaj"
+        "Vazo të përshtatura me interierin tuaj"
       ),
       L(
         "Proven boost to workplace wellbeing and acoustics",
-        "Përmirësim i provuar i mirëqenies dhe akustikës në punë"
+        "Ambiente pune më të këndshme, më të gjalla dhe më të qeta"
       ),
     ],
     gallery: [
@@ -573,7 +573,7 @@ export const services = [
         question: L("What does rental cost?", "Sa kushton qiraja?"),
         answer: L(
           "Programs start at €149/month for a small office setup, including planters, care visits and replacements. We'll quote precisely after a free site visit.",
-          "Programet fillojnë nga 149 € në muaj për një zyrë të vogël, përfshirë vazot, vizitat e kujdesit dhe zëvendësimet. Ju japim çmim të saktë pas një vizite falas në ambient."
+          "Programet fillojnë nga 149 € në muaj për një zyrë të vogël dhe përfshijnë vazot, vizitat e kujdesit dhe zëvendësimet. Çmimin e saktë e japim pas një vizite falas në ambient."
         ),
       },
       {
@@ -583,7 +583,7 @@ export const services = [
         ),
         answer: L(
           "Our standard agreement runs 12 months, with flexible upgrade options as your team or space grows.",
-          "Marrëveshja jonë standarde zgjat 12 muaj, me opsione fleksibël përmirësimi ndërsa rritet ekipi apo hapësira juaj."
+          "Marrëveshja standarde zgjat 12 muaj, me mundësi fleksibile për ndryshim nëse rritet ekipi apo hapësira juaj."
         ),
       },
       {
@@ -593,7 +593,7 @@ export const services = [
         ),
         answer: L(
           "We move the plants with you. Relocation within our service area is included in the program.",
-          "I zhvendosim bimët bashkë me ju. Rivendosja brenda zonës sonë të shërbimit është e përfshirë në program."
+          "I zhvendosim bimët bashkë me ju. Zhvendosja brenda zonës sonë të shërbimit është e përfshirë në program."
         ),
       },
     ],
@@ -601,22 +601,22 @@ export const services = [
   {
     id: 10,
     slug: "seasonal-maintenance",
-    title: L("Seasonal Maintenance", "Mirëmbajtje Sezonale"),
+    title: L("Seasonal maintenance", "Mirëmbajtje sezonale"),
     icon: "calendar",
     featured: true,
     image: img("photo-1461354464878-ad92f492a5a0"),
     shortDescription: L(
       "Year-round garden care programs — spring prep, summer upkeep, autumn cleanup and winter protection.",
-      "Programe kujdesi gjatë gjithë vitit — përgatitje pranverore, mirëmbajtje verore, pastrim vjeshtor dhe mbrojtje dimërore."
+      "Kujdes gjatë gjithë vitit: përgatitje në pranverë, mirëmbajtje në verë, pastrim në vjeshtë dhe mbrojtje në dimër."
     ),
     description: L(
       "Gardens change with the seasons, and so does the work they need. Our maintenance programs schedule the right tasks at the right time: spring bed preparation and mulching, summer pruning and feeding, autumn leaf clearance and bulb planting, and winter protection for tender plants. One plan, a beautiful garden all year.",
-      "Kopshtet ndryshojnë me stinët, dhe bashkë me to edhe puna që u duhet. Programet tona të mirëmbajtjes planifikojnë detyrat e duhura në kohën e duhur: përgatitja e leheve dhe mulçimi në pranverë, krasitja dhe ushqyerja në verë, pastrimi i gjetheve dhe mbjellja e tulipanëve në vjeshtë, dhe mbrojtja e bimëve delikate në dimër. Një plan i vetëm, një kopsht i bukur gjithë vitin."
+      "Kopshti ndryshon me stinët, prandaj edhe kujdesi duhet të jetë i planifikuar. Programet tona vendosin punët në kohën e duhur: përgatitje dhe mulçim në pranverë, krasitje e ushqim në verë, pastrim gjethesh dhe mbjellje në vjeshtë, si dhe mbrojtje për bimët delikate në dimër. Një plan i qartë për një kopsht të rregullt gjithë vitin."
     ),
     benefits: [
       L(
         "A written annual care calendar for your garden",
-        "Një kalendar vjetor kujdesi me shkrim për kopshtin tuaj"
+        "Kalendar vjetor kujdesi për kopshtin tuaj"
       ),
       L(
         "The same dedicated crew on every visit",
@@ -624,11 +624,11 @@ export const services = [
       ),
       L(
         "Spring and autumn deep-maintenance visits",
-        "Vizita të thelluara mirëmbajtjeje në pranverë dhe vjeshtë"
+        "Vizita më të plota mirëmbajtjeje në pranverë dhe vjeshtë"
       ),
       L(
         "Mulching, feeding and pruning at optimal times",
-        "Mulçim, ushqyerje dhe krasitje në kohët optimale"
+        "Mulçim, ushqyerje dhe krasitje në kohën e duhur"
       ),
       L(
         "Priority booking for extra work and repairs",
@@ -648,7 +648,7 @@ export const services = [
         ),
         answer: L(
           "Most gardens are on a fortnightly rhythm through the growing season and monthly in winter, with deep-maintenance visits each spring and autumn.",
-          "Shumica e kopshteve ndjekin një ritëm dyjavor gjatë sezonit të rritjes dhe mujor në dimër, me vizita të thelluara çdo pranverë dhe vjeshtë."
+          "Gjatë sezonit të rritjes, shumica e kopshteve mirëmbahen çdo dy javë. Në dimër zakonisht mjafton një vizitë mujore, me kontrolle më të plota në pranverë dhe vjeshtë."
         ),
       },
       {
@@ -658,7 +658,7 @@ export const services = [
         ),
         answer: L(
           "Yes — although the annual program is the best value, we also offer standalone spring prep and autumn cleanup packages.",
-          "Po — ndonëse programi vjetor është vlera më e mirë, ofrojmë edhe paketa të veçanta përgatitjeje pranverore dhe pastrimi vjeshtor."
+          "Po. Programi vjetor është më i leverdishëm, por ofrojmë edhe paketa të veçanta për përgatitje pranverore dhe pastrim vjeshtor."
         ),
       },
       {
@@ -668,7 +668,7 @@ export const services = [
         ),
         answer: L(
           "Always. Everything we remove is composted or recycled, and removal is included in the program price.",
-          "Gjithmonë. Gjithçka që largojmë kompostohet ose riciklohet, dhe largimi është i përfshirë në çmimin e programit."
+          "Po. Mbetjet që largojmë i kompostojmë ose riciklojmë, dhe largimi është i përfshirë në çmimin e programit."
         ),
       },
     ],

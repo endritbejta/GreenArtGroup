@@ -21,7 +21,7 @@ export default function SectionHeading({
       {eyebrow && (
         <p
           className={cn(
-            "mb-3 flex items-center gap-3 text-xs font-semibold uppercase tracking-[0.2em]",
+            "mb-3 flex items-center gap-3 text-xs font-semibold",
             centered && "justify-center",
             light ? "text-primary-200" : "text-primary-600"
           )}

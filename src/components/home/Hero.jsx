@@ -19,7 +19,7 @@ export default function Hero() {
         <div className="grid gap-6 lg:grid-cols-2">
           {/* Copy panel */}
           <div className="flex animate-fade-up flex-col justify-center rounded-3xl bg-primary-500 p-8 text-white sm:p-12">
-            <p className="mb-4 flex items-center gap-3 text-xs font-semibold uppercase tracking-[0.2em] text-primary-100">
+            <p className="mb-4 flex items-center gap-3 text-xs font-semibold text-primary-100">
               <span aria-hidden="true" className="h-px w-8 bg-current" />
               {t("hero.eyebrow")}
             </p>

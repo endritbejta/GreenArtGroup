@@ -35,7 +35,7 @@ export default function Button({
   ...props
 }) {
   const classes = cn(
-    "group inline-flex items-center justify-center gap-2 rounded-full font-semibold uppercase tracking-wide transition-all duration-300",
+    "group inline-flex items-center justify-center gap-2 rounded-full font-semibold transition-all duration-300",
     VARIANTS[variant],
     SIZES[size],
     className

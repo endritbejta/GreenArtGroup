@@ -11,7 +11,7 @@ export default function TeamCard({ member }) {
       </div>
       <div className="p-5 text-center">
         <h3 className="text-base font-bold text-gray-900">{member.name}</h3>
-        <p className="mt-0.5 text-xs font-medium uppercase tracking-wide text-primary-600">
+        <p className="mt-0.5 text-xs font-medium text-primary-600">
           {member.role}
         </p>
       </div>

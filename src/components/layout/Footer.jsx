@@ -35,7 +35,7 @@ export default function Footer() {
         </div>
 
         <nav aria-label="Footer">
-          <h3 className="text-sm font-bold uppercase tracking-wide text-white">
+          <h3 className="text-sm font-bold text-white">
             {t("footer.quickLinks")}
           </h3>
           <ul className="mt-4 space-y-2.5 text-sm">
@@ -50,7 +50,7 @@ export default function Footer() {
         </nav>
 
         <nav aria-label={t("footer.services")}>
-          <h3 className="text-sm font-bold uppercase tracking-wide text-white">
+          <h3 className="text-sm font-bold text-white">
             {t("footer.services")}
           </h3>
           <ul className="mt-4 space-y-2.5 text-sm">
@@ -69,7 +69,7 @@ export default function Footer() {
 
         <div className="space-y-8">
           <div>
-            <h3 className="text-sm font-bold uppercase tracking-wide text-white">
+            <h3 className="text-sm font-bold text-white">
               {t("footer.contact")}
             </h3>
             <ul className="mt-4 space-y-2.5 text-sm">
